@@ -11,7 +11,7 @@ This is a repo set up for a gaming group that wants to stick with the 2nd editio
 
 __I found a bug!__ / *I have another request*
 
-Great, thank you! Please [Report a bug][bug report] - you can also suggest enhancements and raise other issues there.
+We're not accepting bug reports/suggestions at this time
 
 ## Standards
 
