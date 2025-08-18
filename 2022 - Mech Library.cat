@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="56" battleScribeVersion="2.03" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="57" battleScribeVersion="2.03" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -8257,12 +8257,24 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Galvanic Rifle" hidden="false" id="f5f0-318e-e3b2-95a5" publicationId="e1ebd931--pubd1e17749">
       <profiles>
-        <profile name="Galvanic Rifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8415-9781-3784-024f" publicationId="2301-1cab-pubd1e1" page="72">
+        <profile name="Galvanic Rifle" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="8415-9781-3784-024f" publicationId="e1ebd931--pubd1e17749" page="72">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Precision Shots</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Transuranic arquebus" hidden="false" id="feed-8aa6-cf46-4d15" publicationId="e1ebd931--pubd1e17749" page="74">
+      <profiles>
+        <profile name="Transuranic arquebus" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4d54-9926-ed8d-c320" publicationId="e1ebd931--pubd1e17749" page="74">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sniper, Armourbane</characteristic>
           </characteristics>
         </profile>
       </profiles>

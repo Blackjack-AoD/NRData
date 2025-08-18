@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="2" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="3" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="4ccbb79d-4a99-4828-af69-e600b4c38743" publisherUrl="https://github.com/Blackjack-AoD/NRData" shortName="Blackjack-AoD/NRData"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -18156,6 +18156,12 @@ When assigning additional models to units using the Among the Ranks and Militia 
 
 Attacks with this special rule have no effect on models with the Vehicle or Primarch Unit Type, or on any model that starts the battle with 6 or more Wounds. Do not roll To Wound if Hits from an attack with this special rule are allocated to such a model and simply discard those Hits. Similarly, models of these Types are not affected by the modifiers to Movement inflicted by the Entangle special rule, regardless of whether other models in the same unit are affected.</description>
     </rule>
+    <rule name="Critical Hit" id="d6e0-1f88-c286-75ae" hidden="false">
+      <description>Attacks made with the Critical Hit (X) Special Rule have a chance to automatically cause a wound and inflict 1 extra point of Damage.
+
+
+Any hit roll equal to or greater than the value of X is an automatic wound without any dice being rolled, and increases the value of the  Brutal Special rule by +1 if the attack has it. If the attack doesn&apos;t have the Brutal Special rule it gains Brutal(2) for that hit only. Saves and damage mitigation rolls may be taken as normal.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="f52c-1f37-acd2-703c" name="Tartaros Terminator Armour" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
@@ -18248,6 +18254,11 @@ Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Ai
         <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
         <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
         <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One on each side of the hull and one at the front.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Saturnine Terminator Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6b62-cce7-aa34-232d">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Legion Saturnine Terminator armour confers a 2+ Armour Save and a 4+ Invulnerable Save. In addition, a unit that includes any models with Saturnine Terminator armour may not make Sweeping Advances.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

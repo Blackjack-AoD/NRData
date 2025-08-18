@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c01b-0224-f806-0d23" name="Titan Legions" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c01b-0224-f806-0d23" name="Titan Legions" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <forceEntries>
     <forceEntry id="aebe-bed9-b32f-a8ea" name="0. Titan Maniple" hidden="false">
       <categoryLinks>
@@ -841,6 +841,7 @@
               </costs>
             </entryLink>
             <entryLink id="6064-681c-56e8-79ff" name="Radium Carbine" hidden="false" collective="false" import="true" targetId="89d1-f5c7-7a80-3365" type="selectionEntry"/>
+            <entryLink import="true" name="Galvanic Rifle" hidden="false" id="2a7a-a238-8d84-26d1" type="selectionEntry" targetId="f5f0-318e-e3b2-95a5" publicationId="e1ebd931--pubd1e17749" page="78"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c90e-0b5b-01a9-f164" name="Dedicated Transport" hidden="false" collective="false" import="true">
@@ -905,6 +906,3 @@
     <catalogueLink id="e048-9e5e-507c-5baf" name="LI - Assassins and Agents" targetId="4c88-1a81-7e53-0a67" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
-
-
-
