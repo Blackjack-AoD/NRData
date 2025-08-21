@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="48" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="49" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="6107-168e-198e-2e94" name="X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <modifiers>
@@ -3029,7 +3029,19 @@
         <entryLink id="daa2-45fb-00e0-6b24" name="Retinue" hidden="false" collective="false" import="true" targetId="8a62-e4e2-d57f-5c33" type="selectionEntryGroup">
           <comment>template_id_5c5d-d6ce-4ee4-9846    template_targetId_be38-a066-4f8e-ae54</comment>
         </entryLink>
+        <entryLink import="true" name="Terminator Saturnine Squad" hidden="false" id="4eb8-2d2a-7938-081d" type="selectionEntry" targetId="fb74-e427-ebe5-b644">
+          <categoryLinks>
+            <categoryLink name="Elites:" hidden="false" id="62c4-ba5f-242e-ec24" targetId="7aee-565f-b0ae-294e" primary="true"/>
+            <categoryLink name="Unit:" hidden="false" id="27e0-56ca-53f8-8d4e" targetId="36c3-e85e-97cc-c503" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Terminator Saturnine Squad" hidden="false" id="63af-aba2-4159-643b" type="selectionEntry" targetId="fb74-e427-ebe5-b644">
+      <categoryLinks>
+        <categoryLink name="Elites:" hidden="false" id="547e-b645-40ad-5c8a" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="7c1a-2dde-deb1-4c05" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>

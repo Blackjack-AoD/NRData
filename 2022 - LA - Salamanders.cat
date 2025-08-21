@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <modifiers>
@@ -3383,7 +3383,19 @@
         <entryLink id="fd8a-a4e5-390f-3824" name="Retinue" hidden="false" collective="false" import="true" targetId="ec53-0911-52b7-dafa" type="selectionEntryGroup">
           <comment>template_id_5c5d-d6ce-4ee4-9846    template_targetId_be38-a066-4f8e-ae54</comment>
         </entryLink>
+        <entryLink import="true" name="Terminator Saturnine Squad" hidden="false" id="ed5d-c772-6238-6222" type="selectionEntry" targetId="fb74-e427-ebe5-b644">
+          <categoryLinks>
+            <categoryLink name="Elites:" hidden="false" id="6716-5132-91b4-79bf" targetId="7aee-565f-b0ae-294e" primary="true"/>
+            <categoryLink name="Unit:" hidden="false" id="f334-0bab-af5f-689b" targetId="36c3-e85e-97cc-c503" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Terminator Saturnine Squad" hidden="false" id="07d2-1747-4229-c000" type="selectionEntry" targetId="fb74-e427-ebe5-b644">
+      <categoryLinks>
+        <categoryLink name="Elites:" hidden="false" id="20ca-9247-6035-6082" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="d50f-bba9-2a32-2a57" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
