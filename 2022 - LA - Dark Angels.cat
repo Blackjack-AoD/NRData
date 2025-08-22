@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="44" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="45" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="7653-8041-8d1c-c872" name="Dreadwing Interemptor Squad" hidden="false" collective="false" import="false" targetId="3008-e8ed-9e97-71c9" type="selectionEntry">
       <categoryLinks>
@@ -2933,7 +2933,7 @@
         <entryLink id="d946-b4eb-ff21-17da" name="Retinue" hidden="false" collective="false" import="true" targetId="66e9-e8f8-5eb6-1cf6" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
-    <entryLink import="true" name="Terminator Saturnine Squad" hidden="false" id="f37f-6f08-12ba-9296" type="selectionEntry" targetId="fb74-e427-ebe5-b644">
+    <entryLink import="false" name="Terminator Saturnine Squad" hidden="false" id="f37f-6f08-12ba-9296" type="selectionEntry" targetId="fb74-e427-ebe5-b644">
       <categoryLinks>
         <categoryLink targetId="7aee-565f-b0ae-294e" id="a812-e5ea-51d3-ccff" primary="true" name="Elites:"/>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="bb3d-4acb-be65-8084" primary="false" name="Unit:"/>
