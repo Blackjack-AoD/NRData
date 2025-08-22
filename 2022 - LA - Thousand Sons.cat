@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="abac-8dd1-df65-e253" name="LA -  XV: Thousand Sons" revision="44" battleScribeVersion="2.03" authorName="Arkangelmark5" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="abac-8dd1-df65-e253" name="LA -  XV: Thousand Sons" revision="45" battleScribeVersion="2.03" authorName="Arkangelmark5" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="f743-7ff9-a2f3-01c7" name="Exemplary Battles of the Age of Darkness: The Axandria IV Incident" shortName="Axandria IV" publisher="Exemplary Battles of the Age of Darkness: The Axandria IV Incident" publicationDate="9/16/2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/3mVvZrTG9XOWeVxv.pdf"/>
   </publications>
@@ -3038,7 +3038,7 @@
         </entryLink>
       </entryLinks>
     </entryLink>
-    <entryLink import="true" name="Terminator Saturnine Squad" hidden="false" id="6b79-3699-e790-534e" type="selectionEntry" targetId="fb74-e427-ebe5-b644">
+    <entryLink import="false" name="Terminator Saturnine Squad" hidden="false" id="6b79-3699-e790-534e" type="selectionEntry" targetId="fb74-e427-ebe5-b644">
       <categoryLinks>
         <categoryLink name="Elites:" hidden="false" id="b393-782d-0f78-c63d" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink name="Unit:" hidden="false" id="3887-a2b9-9cc4-18e2" targetId="36c3-e85e-97cc-c503" primary="false"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="55" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="56" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
@@ -3096,7 +3096,7 @@
         </entryLink>
       </entryLinks>
     </entryLink>
-    <entryLink import="true" name="Terminator Saturnine Squad" hidden="false" id="b07b-c1a3-fa90-9999" type="selectionEntry" targetId="fb74-e427-ebe5-b644">
+    <entryLink import="false" name="Terminator Saturnine Squad" hidden="false" id="b07b-c1a3-fa90-9999" type="selectionEntry" targetId="fb74-e427-ebe5-b644">
       <categoryLinks>
         <categoryLink name="Elites:" hidden="false" id="1334-8a9a-1c3f-39af" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink name="Unit:" hidden="false" id="afd8-5ac1-eb90-2145" targetId="36c3-e85e-97cc-c503" primary="false"/>
