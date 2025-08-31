@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8866-00ec-715f-f21a" name="LA -   VII: Imperial Fists" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8866-00ec-715f-f21a" name="LA -   VII: Imperial Fists" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="b3e4-1487-4ab7-7515" name="Alexis Polux" hidden="false" collective="false" import="false" targetId="9229-b4f9-2213-9672" type="selectionEntry">
       <modifiers>
@@ -3845,8 +3845,14 @@
     </entryLink>
     <entryLink import="true" name="Araknae Quad Accelerator Platform" hidden="false" id="744d-b892-afc8-e4d4" type="selectionEntry" targetId="4048-a7f8-d238-e024">
       <categoryLinks>
-        <categoryLink name="Elites:" hidden="false" id="2714-39d7-6706-9af1" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink name="Unit:" hidden="false" id="1dc7-5ba2-09ba-419d" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="b2f2-baa2-fc69-f97a" primary="true" name="Fortification:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Saturnine Dreadnought Talon" hidden="false" id="c67e-0d8d-6c0a-2b13" type="selectionEntry" targetId="b54a-8d35-4b29-e62b">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="ac60-1d65-dfda-4d2f" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="65b5-5362-e24f-3d91" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

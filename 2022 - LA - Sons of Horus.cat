@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="53" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="c2a2-9b6d-b384-3f43" name="XVI: Sons of Horus" hidden="false" collective="false" import="false" targetId="01b4-57c7-bf61-2abf" type="selectionEntry">
       <modifiers>
@@ -3179,8 +3179,14 @@
     </entryLink>
     <entryLink import="true" name="Araknae Quad Accelerator Platform" hidden="false" id="01b4-38a0-3fd3-319c" type="selectionEntry" targetId="4048-a7f8-d238-e024">
       <categoryLinks>
-        <categoryLink name="Elites:" hidden="false" id="5472-fd08-810f-534c" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink name="Unit:" hidden="false" id="cfc1-9a21-5163-741a" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="d44e-cc3e-6f55-1922" primary="true" name="Fortification:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Saturnine Dreadnought Talon" hidden="false" id="519d-d3b3-13e0-56cd" type="selectionEntry" targetId="b54a-8d35-4b29-e62b">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="0d14-7633-a9b3-6815" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="c362-db6a-57ab-879b" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

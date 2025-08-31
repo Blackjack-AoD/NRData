@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="51" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="52" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="a119-3943-4b8b-b651" name="Captain Lucius" hidden="true" collective="false" import="false" targetId="0707-1e4b-27da-9cd4" type="selectionEntry">
       <modifiers>
@@ -3126,8 +3126,14 @@
     </entryLink>
     <entryLink import="true" name="Araknae Quad Accelerator Platform" hidden="false" id="bd87-0912-1351-7eb7" type="selectionEntry" targetId="4048-a7f8-d238-e024">
       <categoryLinks>
-        <categoryLink name="Elites:" hidden="false" id="d8a6-3522-24e3-2492" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink name="Unit:" hidden="false" id="43f0-d76f-574e-7362" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="a021-9415-1e87-3f92" primary="true" name="Fortification:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Saturnine Dreadnought Talon" hidden="false" id="d1e8-71a7-34af-9bac" type="selectionEntry" targetId="b54a-8d35-4b29-e62b">
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="0adf-4786-13d2-6e00" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="6220-902c-e8ee-46d9" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

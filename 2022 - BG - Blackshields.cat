@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" revision="13" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" revision="14" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Retinue" hidden="false" id="5b3d-ea70-4774-c23d" collective="false" import="true">
       <comment>template_id_be38-a066-4f8e-ae54</comment>
@@ -2049,8 +2049,14 @@ When you do so, replace this model’s Legiones Astartes (Salamanders) special r
     </entryLink>
     <entryLink import="true" name="Araknae Quad Accelerator Platform" hidden="false" id="1958-2270-8b4e-a36e" type="selectionEntry" targetId="4048-a7f8-d238-e024">
       <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="19cb-06b0-7e3e-eca2" primary="true" name="Elites:"/>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="4bb5-dae0-791c-fab9" primary="false" name="Unit:"/>
+        <categoryLink targetId="a24f-12d8-36c1-f477" id="2c02-10bb-d578-b9e3" primary="true" name="Fortification:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Saturnine Dreadnought Talon" hidden="false" id="4472-5931-8037-5a1b" type="selectionEntry" targetId="b54a-8d35-4b29-e62b">
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="c0da-dbe3-a549-5c0e" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="70db-3adb-e89d-4259" primary="false" name="Unit:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
