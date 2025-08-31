@@ -21,7 +21,8 @@ Changes from Second Edition:
 - Added Saturnine Praetor, allowing Concussion Hammer, War Axe, Disruption fist, plasma blaster and regular ranged Saturnine Weapons
 - Added Saturnine Terminators, allowing both Saturnine Melee and ranged weapons, also allowed standard terminator ranged and melee weapons to be taken
 - Added Disintegrator weapons for Vets
-- Added Araknae Weapon platform into Elites, will update and move to Fortifications in the next update 
+- Added Araknae Weapon platform into Fortifications
+- Added Saturnine Dreadnought 
 
 ### Mechanicum
 - Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in 
