@@ -13,6 +13,19 @@ __I found a bug!__ / *I have another request*
 
 We're not accepting bug reports/suggestions at this time
 
+## Changelog
+
+Changes from Second Edition:
+
+### Legiones Astartes
+- Added Saturnine Praetor, allowing Concussion Hammer, War Axe, Disruption fist, plasma blaster and regular ranged Saturnine Weapons
+- Added Saturnine Terminators, allowing both Saturnine Melee and ranged weapons, also allowed standard terminator ranged and melee weapons to be taken
+- Added Disintegrator weapons for Vets
+- Added Araknae Weapon platform into Elites, will update and move to Fortifications in the next update 
+
+### Mechanicum
+- Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in 
+
 ## Standards
 
 ### Creating units
