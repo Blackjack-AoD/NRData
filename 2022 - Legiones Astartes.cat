@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="217" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="218" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -28884,6 +28884,11 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Disintegrator Rifle" hidden="false" id="715c-36cd-f7ee-2d4f" type="selectionEntry" targetId="b2cd-838a-13fd-8ffa">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <modifiers>
                     <modifier type="set" value="533f-7a1c-adfb-afe4" field="defaultSelectionEntryId">
@@ -29242,6 +29247,16 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     <entryLink import="true" name="Heavy Alchem Flamer" hidden="false" id="3a52-8a89-08a0-1bf5" collective="false" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Disintegrator" hidden="false" id="dab2-b1d3-953f-bd19" type="selectionEntry" targetId="39b2-b207-fc89-3630">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Disintegrator Blaster" hidden="false" id="518e-af6e-df00-1af2" type="selectionEntry" targetId="0be5-28b7-6246-6d48">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -68068,7 +68083,8 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
       <profiles>
         <profile name="Atomantic Pavise" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="aa14-e472-db74-a003">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">&quot;Models wholly within 3&quot; of this Model have a 5+ Invulnerable Save against Shooting Attacks.&quot;</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models (including itself) wholly within 3&quot; of this Model have a 5+ Invulnerable Save against Shooting Attacks.
+In addition, when a model with an Atomantic Pavise loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6&quot; suffer an automatic Hit at Str 8, AP -.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -68092,21 +68108,31 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Anvillus autocannon battery" hidden="false" id="3e69-a12e-b5ba-d80e">
+    <selectionEntry type="upgrade" import="true" name="Quad Accelerator Battery" hidden="false" id="3e69-a12e-b5ba-d80e">
       <profiles>
-        <profile name="Anvillus autocannon battery" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e0f8-c4cd-a2a3-a999">
+        <profile name="Quad Accelerator Battery" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e0f8-c4cd-a2a3-a999">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Rending (5+), Rapid Tracking, Skyfire, Auto, Twinlinked</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Rending (6+), Rapid Tracking, Skyfire, Auto, Twin-linked, ExoShock (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Rending (X)" id="c86a-9a43-7d45-28a7" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d"/>
+        <infoLink name="Rending (X)" id="c86a-9a43-7d45-28a7" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Skyfire" id="7aab-bcf5-44e1-68a8" hidden="false" type="rule" targetId="f2bf-5daa-9f93-0b01"/>
         <infoLink name="Twin-linked" id="dc13-5a69-1950-4209" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+        <infoLink name="Rapid Tracking" id="0a38-a77f-e5ed-22ad" hidden="false" type="rule" targetId="5ec1-9228-07c6-5c66"/>
+        <infoLink name="Exoshock (X)" id="d499-6a6a-8d73-a257" hidden="false" type="rule" targetId="69ca-318a-b47a-7a3c">
+          <modifiers>
+            <modifier type="set" value="Exoshock (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Saturnine Concussion Hammer" hidden="false" id="7b41-fef3-c81f-9dfc">
@@ -69926,6 +69952,99 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="4048-a7f8-d238-e024" name="Araknae Quad Accelerator Platform" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="11f2-472f-c1d1-9ae9" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="d684-5b63-caa7-adc4" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="02d1-ddb2-3f59-f356" name="Araknae Quad Accelerator Platform" page="" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">0&quot;</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2382-1b5d-9761-cf17" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="1f5c-e271-a39d-74fa" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="6647-6bc4-addf-cd3b" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="7654-1cd6-cf2f-d7b8" primary="false" name="Elites:"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bdcf-46dc-3718-54fc" name="Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="e97c-abf0-75a3-3a17" name="Preysight" hidden="false" collective="false" import="true" targetId="b905-4d78-c141-4e63" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="335a-3f75-2e27-2dc9" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b31f-9180-b84e-b202" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+        <entryLink id="3e85-a146-d44e-3fda" name="Quad Accelerator Battery" hidden="false" collective="false" import="true" targetId="3e69-a12e-b5ba-d80e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a68d-4749-f240-b01a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fcd-bcc7-f6dd-837d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Atomantic Pavise" hidden="false" id="f76f-37c6-71af-504e" type="selectionEntry" targetId="b755-a344-e9ca-5e2d"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="49e5-abc0-00df-2a64" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -76415,6 +76534,9 @@ When included in a Shattered Legions Detachment, this model must represent the L
     </rule>
     <rule name="Lethal Exposure" hidden="false" id="5ec4-39ed-2360-824c" publicationId="d882-d2a-5da1-92c4">
       <description>If a unit makes attacks with one or more weapons with this special rule as part of a Shooting attack in any Phase, including as part of a Reaction, roll a D6. If the result is equal to or less than the number of weapons in the unit with the Lethal Exposure special rule, the unit suffers a single Wound with no Saves or Damage Mitigation rolls allowed - this wound is allocated to any model in the unit by the controlling player.</description>
+    </rule>
+    <rule name="Rapid Tracking" id="5ec1-9228-07c6-5c66" hidden="false">
+      <description>Each time a Model makes a Shooting Attack as part of the Interceptor Advanced Reaction, it&apos;s Controlling Player can select a Weapon with this Special Rule for that Shooting Attack, even if it is not a Defensive Weapon</description>
     </rule>
   </sharedRules>
   <catalogueLinks>
