@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="218" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="219" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -68631,7 +68631,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
                   </costs>
                 </entryLink>
                 <entryLink id="8bcb-ac2d-ffab-c63b" name="The Awakening Fire - Fear (1)" hidden="true" collective="false" import="true" targetId="34b6-77c4-4929-001c" type="selectionEntry"/>
-                <entryLink id="5b60-deca-9156-7531" name="Deepstrike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+                <entryLink id="5b60-deca-9156-7531" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -69995,7 +69995,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="02d1-ddb2-3f59-f356" name="Araknae Quad Accelerator Platform" page="" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+        <profile id="02d1-ddb2-3f59-f356" name="Araknae Quad Accelerator Platform" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">0&quot;</characteristic>
@@ -70013,7 +70013,6 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
         <categoryLink id="2382-1b5d-9761-cf17" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="1f5c-e271-a39d-74fa" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="6647-6bc4-addf-cd3b" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="7654-1cd6-cf2f-d7b8" primary="false" name="Elites:"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="bdcf-46dc-3718-54fc" name="Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
@@ -72487,7 +72486,7 @@ Any Solar Auxilia Rifles Sections included through the use of the Overseer’s R
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
           </costs>
         </entryLink>
-        <entryLink id="4123-9851-52ba-4f34" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry" defaultAmount=""/>
+        <entryLink id="4123-9851-52ba-4f34" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry"/>
         <entryLink id="391a-a1cd-2a6c-88dd" name="Raven&apos;s Talon" hidden="true" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="d2ee-04cb-5f8a-2642" value="5">
