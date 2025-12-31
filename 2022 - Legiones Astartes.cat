@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="221" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="222" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -72044,6 +72044,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                        <condition type="lessThan" value="3" field="selections" scope="56fe-eaa7-8fc2-99e8" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -72423,8 +72424,18 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
       <entryLinks>
         <entryLink id="d406-33de-1248-59bc" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
         <entryLink import="true" name="Saturnine Terminator Armour" hidden="false" id="5804-a4b4-ab51-47ac" type="selectionEntry" targetId="21dd-6644-4723-8af3"/>
-        <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="ee83-98a1-8c50-95a3" type="selectionEntry" targetId="f625-a2b0-e61b-ec7f"/>
-        <entryLink import="true" name="Occulix Targeting Auspex" hidden="false" id="7dd8-a787-0320-b10d" type="selectionEntry" targetId="4e34-50c2-d60e-2d1b"/>
+        <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="ee83-98a1-8c50-95a3" type="selectionEntry" targetId="f625-a2b0-e61b-ec7f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11ba-907c-945e-52b6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="370b-8270-f358-28cd"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Occulix Targeting Auspex" hidden="false" id="7dd8-a787-0320-b10d" type="selectionEntry" targetId="4e34-50c2-d60e-2d1b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e0b-8297-980c-fa76"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6da2-fd17-7a0b-2734"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90"/>
