@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="50" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="51" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -7224,21 +7224,33 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6961-6b10-2c2e-d9ad"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Cognis Manipulator" hidden="false" id="45e4-8a21-3d19-3ce9" type="selectionEntry" targetId="9f63-5e85-a66c-b5af">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bb4-6590-195c-da8c"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Mindscanner probe" hidden="false" id="7d5a-1141-8ecc-129f" type="selectionEntry" targetId="a058-7c41-a55a-c8fc">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3516-edca-7fb1-1fcb"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Smoke Launchers" hidden="false" id="bbce-2701-8ee8-aa44" type="selectionEntry" targetId="0873-34dd-e52d-d33c">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b0b-6906-9ebf-4e1b"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
