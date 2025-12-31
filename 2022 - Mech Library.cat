@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="57" battleScribeVersion="2.03" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="58" battleScribeVersion="2.03" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -47,7 +47,11 @@
 • A model with the Armiger Unit type is affected by the Haywire, Detonation, Armourbane (X) and Battlesmith (X) special rules as if it had the Dreadnought Unit Type.</description>
         </rule>
         <rule name="Armiger and Moirax Talons" hidden="false" id="d840-fbd0-352e-b33e" publicationId="bde1-6db1-163b-3b76" page="102">
-          <description>The Scout Knights of the Taghmata and Questoris Households often roamed the battlefield independently as the vanguard of their orders. While each war machine strode the battlefield distant from their companions, they shared fierce bonds of fealty and brotherhood.
+          <description>The Scout Knights of the Taghmata and Questoris Households often roamed the battlefield independently as the vanguard of their orders. While each war machine strode the battlefield distant from their companions, they shared fierce bonds of fealty and brotherhood. 
+When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated as a single unit.</description>
+        </rule>
+        <rule name="Onager DuneCrawlers" hidden="false" id="e503-194f-32c8-f521" publicationId="e1ebd931--pubd1e17749" page="">
+          <description>Onager DuneCrawlers often roamed the battlefield independently as the vanguard of the Mechanicum. While each war machine strode the battlefield distant from their companions, they shared fierce bonds of fealty and brotherhood. 
 When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated as a single unit.</description>
         </rule>
       </rules>
@@ -8279,6 +8283,209 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cyb
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry id="33a8-4e27-c0a7-ba78" name="Artificia Praelium" publicationId="bde1-6db1-163b-3b76" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c59-3e87-46a1-49f3" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="61cf-7e7b-954d-6951" name="Artificia Gladiatoris (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fc5-0c94-791a-9466" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6531-00e5-79b2-aaec" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b4d3-6963-8031-d7b5" name="Artificia Gladiatoris (Cybertheurgic Rite)" page="" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single friendly unit with a model within 12&quot; which contains at least one model with the Automata Unit Type and apply one of the following effects to all models with the Automata Unit Type in the unit:
+• When making a Charge roll for the unit in the same turn as this Rite is used, roll an additional dice and discard the lowest rolled dice before determining the results of the Charge roll.
+• The unit (not each individual model) ignores the first Hit (rather than Wound) inflicted upon it in each Assault phase that targets it until the beginning of the controlling player’s next player turn. Simply discard that Hit without allocating it to a model.
+• The unit adds +1 to its WS (Weapon Skill) for the following Assault phase in which this power is used.
+• Until the start of the controlling player’s next turn as the Active player, the unit may ignore the restriction against making Reactions during an Assault phase imposed by the Automata Unit Type.
+The Cybertheurgist’s controlling player may choose to make a Cybertheurgy check before using this power, if the Check is successful then two different options may be applied to the target unit instead of one. If the Check is failed then no options may be chosen and the Cybertheurgist suffers Cybertheurgic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9975-9330-b494-a157" name="Vinculum Ferreus (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d75e-3504-22e2-9e2c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0af6-d3d5-7ffc-1302" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4006-2513-39e3-b634" name="Vinculum Ferreus (Cybertheurgic Weapon)" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Gravitic Tether, Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="ce41-8fa3-56cd-8bbf" name="Cybertheurgic Focus" hidden="false" targetId="f420-6cdb-5d9b-ef30" type="rule"/>
+            <infoLink name="Gravitic Tether" id="c990-8c23-84d3-21a7" hidden="false" type="rule" targetId="9047-2bc5-8394-2f98"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a946-6406-cffd-2c7f" name="Eradication Beamer" publicationId="e1ebd931--pubd1e17749" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="af95-839d-e1a2-3bdd" name="Eradication Beamer" publicationId="bde1-6db1-163b-3b76" page="113" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">9&quot; / 18&quot; / 36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10 / 8 / 6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1 / 3 / 5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1 / Blast / Large Blast</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="f98b-8444-e0b2-65e1" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cc2a-b89d-f3b7-474e" name="Neutron Laser" publicationId="e1ebd931--pubd1e17749" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8d7f-ffb5-711f-5ac4" name="Neutron Laser" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"> Heavy 1, Blast, Concussive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="6900-266e-4cf6-9dbf" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+        <infoLink name="Concussive (X)" id="8986-acda-bf9d-f68e" hidden="false" type="rule" targetId="7ce5-1bfb-64e6-f826"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="88f4-a9b9-6a74-9118" name="Cognis Heavy Stubber" publicationId="e1ebd931--pubd1e17749" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f8bb-74dd-aae9-4d02" name="Cognis Heavy Stubber" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Coaxial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d8a1-c774-cc5b-c13b" name="Icarus Array - Twin autocannon, Gatling rockets, Daedalus" publicationId="e1ebd931--pubd1e17749" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b80c-a87b-e63b-88a0" name="Daedalus missile launcher" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a822-6517-d179-c294" name="Twin Icarus autocannon" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Skyfire, Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2089-9753-c7b5-a3af" name="Gatling rocket launcher" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Skyfire, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Skyfire" id="3176-b999-3add-286d" hidden="false" type="rule" targetId="f2bf-5daa-9f93-0b01"/>
+        <infoLink name="Ignores Cover" id="8168-a129-3e6d-3444" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc"/>
+        <infoLink name="Twin-linked" id="2eb1-ff4b-f4e3-8892" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Linked Heavy Phosphor Blaster" hidden="false" id="0334-0115-2f39-34ce" publicationId="e1ebd931--pubd1e17749">
+      <profiles>
+        <profile name="Heavy Phosphor Blaster" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3002-3aee-ac6c-6ab1" publicationId="e1ebd931--pubd1e17749" page="72">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Luminagen, twin linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="93fb-4f19-db94-975f" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+        <infoLink name="Lumingen" id="d8e4-3ab7-4aa3-b4c0" hidden="false" type="rule" targetId="fcab-d671-a170-f907"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9f63-5e85-a66c-b5af" name="Cognis Manipulator" publicationId="e1ebd931--pubd1e17749" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f38b-53ec-a342-49aa" name="Cognis Manipulator" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Field Repairs, Specialist Weapon, Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Specialist Weapon" id="84cd-16c9-c53c-3205" hidden="false" type="rule" targetId="1a1f-3c9b-b097-5886"/>
+        <infoLink name="Unwieldy" id="3cba-4bc3-ebda-f1a1" hidden="false" type="rule" targetId="1570-c21a-881f-8b8a"/>
+        <infoLink name="Field Repairs" id="d667-c4b1-3415-5a5a" hidden="false" type="rule" targetId="7f86-5dfe-b0bd-402f"/>
+        <infoLink name="It Will Not Die (X)" id="dfcb-5589-e508-adeb" hidden="false" type="rule" targetId="2784-d0be-a4e2-890f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="a058-7c41-a55a-c8fc" name="Mindscanner probe" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8a38-317d-9e49-d880" name="Mindscanner probe" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When enemy units charge friendly units within 6&quot;, chargers do not get bonus attacks for charging unless charged unit was already locked in combat.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d46-7b20-8085-ccd2" name="Emanatus force field" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="38fa-167b-acf0-04aa" name="Emanatus force field" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an Emanatus force field gains a 6+ Invulnerable Save. Field Harmonics: +1 to the invulnerable save for each other model with an Emanatus force field within 4&quot;, to a maximum of 3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1b29-a58e-296c-3946" name="Household Ranks" hidden="true" collective="false" import="true">
@@ -8761,6 +8968,24 @@ abomination blades for +10 points per model.</description>
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="d929-7702-8f4b-3393" shared="true" id="5cf5-9b73-6f51-b9fa" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Artificia Praelium" hidden="false" id="1751-c2e4-18e6-b31c" type="selectionEntry" targetId="33a8-4e27-c0a7-ba78">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="parent" childId="bd4b-63fa-928c-887d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="parent" childId="73dc-f5bb-be45-2547" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="a919-d9c7-b63e-f933" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="183d-be3f-82f9-e754" shared="true" id="2b66-31d6-37ac-1814" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d929-7702-8f4b-3393" shared="true" id="703f-78f9-45a2-0838" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -9270,6 +9495,18 @@ Treat Archmagos Anarcharis Scoria as an Archmagos Prime on Abeyant.</description
     </rule>
     <rule id="ce3-9a6b-4e7b-3614" name="The Rite of Pure Thought" publicationId="bde1-6db1-163b-3b76" page="108" hidden="false">
       <description>A unit with this special rule may not make any Reactions or Sweeping Advance moves.</description>
+    </rule>
+    <rule name="Gravitic Tether" id="9047-2bc5-8394-2f98" hidden="false">
+      <description>If a unit is hit by a weapon with this special rule (even if no wounds are caused), that unit is &quot;Tethered&quot; until the end of the following Assault Phase. A Tethered unit suffers the following penalties:
+• Drag: The unit must immediately be moved 1D3 inches directly toward the model that fired the Vinculum Ferreus. This move cannot cause the unit to enter base-to-base contact.
+• No Escape: The unit may not make a reaction in the following Assault Phase.</description>
+    </rule>
+    <rule name="Lumingen" id="fcab-d671-a170-f907" hidden="false">
+      <description>Units that suffer unsaved Wound[s], or penetrating or glancing hits, get -1 to cover saves until end of phase.
+Also units may re-roll charge range until end of turn.</description>
+    </rule>
+    <rule name="Field Repairs" id="7f86-5dfe-b0bd-402f" hidden="false">
+      <description>Models with this rules gains the &quot;It Will Not Die&quot; rule</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

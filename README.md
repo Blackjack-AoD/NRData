@@ -19,13 +19,19 @@ Changes from Second Edition:
 
 ### Legiones Astartes
 - Added Saturnine Praetor, allowing Concussion Hammer, War Axe, Disruption fist, plasma blaster and regular ranged Saturnine Weapons
-- Added Saturnine Terminators, allowing both Saturnine Melee and ranged weapons, also allowed standard terminator ranged and melee weapons to be taken
+- Added Saturnine Terminators, allowing both Saturnine Melee and ranged weapons, also allowed standard terminator ranged and melee    weapons to be taken
+- Added Saturnine Command Squad
 - Added Disintegrator weapons for Vets
 - Added Araknae Weapon platform into Fortifications
-- Added Saturnine Dreadnought 
+- Added Saturnine Dreadnought
+- Added Veteran Heavy Support squad with Disintegrator blaster and Heavy Disintegrator into Elites
+- Modified Caestus Assault Ram Misercorde back to HHv1 rules, changed transport capacity to 12. puts it back in line with intended use
 
 ### Mechanicum
 - Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in 
+- Added new Cyberthuergic Arcana discipline, Artificia Gladatoris - Adds Melee Focus, ability to add +1WS to automata
+- Added Dunecrawler from Codex Skitarii 7th Edition, with all the weapon options that entails. added as an Armiger type
+
 
 ## Standards
 
