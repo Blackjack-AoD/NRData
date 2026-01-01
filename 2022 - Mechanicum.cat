@@ -7642,12 +7642,20 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
                 <entryLink import="true" name="Flechette Blasters" hidden="false" id="c419-dd29-717e-4c4d" type="selectionEntry" targetId="040c-c8a4-f3fb-e849"/>
                 <entryLink import="true" name="Taser Goads" hidden="false" id="daf9-e59b-db7f-8089" type="selectionEntry" targetId="9d79-69cb-9232-329c"/>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d58c-1240-af8c-3240-min"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d58c-1240-af8c-3240-max"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Stubcarbines and Power Swords" hidden="false" id="5df3-62ee-3b5e-0932">
               <entryLinks>
                 <entryLink import="true" name="Stubcarbine" hidden="false" id="bb59-594f-269d-712c" type="selectionEntry" targetId="a7cc-88cb-c6e8-6d4c"/>
                 <entryLink import="true" name="Power Sword" hidden="false" id="9d6a-bd8d-8ff5-15f4" type="selectionEntry" targetId="a3cd-aa97-a148-2309"/>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b5f9-b269-000f-0fb3-min"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b5f9-b269-000f-0fb3-max"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
