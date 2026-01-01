@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c01b-0224-f806-0d23" name="Titan Legions" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c01b-0224-f806-0d23" name="Titan Legions" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <forceEntries>
     <forceEntry id="aebe-bed9-b32f-a8ea" name="0. Titan Maniple" hidden="false">
       <categoryLinks>
@@ -30,6 +30,24 @@
         <categoryLink id="2717-b5f0-3a34-a731" name="Titan Legion Min Troop/LoW" hidden="false" targetId="4086-0589-f010-e688" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88d5-a398-a21f-aa97" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="86d4-7a18-7b06-cb10" targetId="7031-469a-1aeb-eab0">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="9e26-a51f-d3a2-7cbb" includeChildSelections="true"/>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7b86-e595-f9b7-face" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites:" hidden="false" id="6fb3-da2a-7bba-3532" targetId="7aee-565f-b0ae-294e">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="a13b-326e-d550-6a0c" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="ced4-122e-0b44-1a4d" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack:" hidden="false" id="2349-9d01-81eb-ca2b" targetId="20ef-cd01-a8da-376e">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="7873-4dd9-3927-b736" includeChildSelections="true"/>
+            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="ae8f-7a58-4317-7099" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
