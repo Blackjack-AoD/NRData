@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="52" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="53" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -7285,7 +7285,12 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Emanatus force field" hidden="false" id="b0da-5ffe-9511-d19b" type="selectionEntry" targetId="4d46-7b20-8085-ccd2"/>
+            <entryLink import="true" name="Emanatus force field" hidden="false" id="b0da-5ffe-9511-d19b" type="selectionEntry" targetId="4d46-7b20-8085-ccd2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ef6-5337-822b-6258-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ef6-5337-822b-6258-max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90"/>
@@ -7442,7 +7447,7 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
             </rule>
           </rules>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May take one of the following:" id="e054-3cf4-fa8e-576b" hidden="false">
+            <selectionEntryGroup name="Must take one of the following:" id="e054-3cf4-fa8e-576b" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Radium jezzail" hidden="false" id="7821-16be-e20a-9045" type="selectionEntry" targetId="c766-e307-0d4a-d282">
                   <costs>
@@ -7584,34 +7589,35 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
           </costs>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Field armour" hidden="false" id="8ffe-0cd2-9570-a34c">
+          <entryLinks>
+            <entryLink import="true" name="Cyber-Familiar" hidden="false" id="6b65-eb11-1c7a-4961" type="selectionEntry" targetId="6c85-4601-cf58-7b35">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="549f-e28a-635f-bf58"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Field Armour:" id="7996-7d00-2292-c746" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Refractor Field" hidden="false" id="8965-db02-ada8-4d4f" type="selectionEntry" targetId="a06a-55a5-070b-1d0e">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                  </costs>
-                </entryLink>
                 <entryLink import="true" name="Conversion Field" hidden="false" id="e36c-8d67-7315-19f6" type="selectionEntry" targetId="471c-8d76-d409-636e">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Refractor Field" hidden="false" id="8965-db02-ada8-4d4f" type="selectionEntry" targetId="a06a-55a5-070b-1d0e">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97bb-194f-46ac-61fb"/>
               </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="May Take:" hidden="false" id="0eee-57df-ac41-9a36">
-              <entryLinks>
-                <entryLink import="true" name="Cyber-Familiar" hidden="false" id="6b65-eb11-1c7a-4961" type="selectionEntry" targetId="6c85-4601-cf58-7b35">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -7626,32 +7632,24 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Unit can take either:" id="e0d5-d851-6a67-c96f" hidden="false">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Stubcarbines and Power Swords" id="d78a-f9d9-955c-d9db" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Stubcarbine" hidden="false" id="260c-7b4a-8533-4b4b" type="selectionEntry" targetId="a7cc-88cb-c6e8-6d4c"/>
-                <entryLink import="true" name="Power Sword" hidden="false" id="91e6-e2a8-0cb4-5e6a" type="selectionEntry" targetId="a3cd-aa97-a148-2309"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="79e7-6c29-5b9b-749c-min"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="79e7-6c29-5b9b-749c-max"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Flechette Blasters and Taser Goads" id="57c1-1a01-a475-a7a8" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Flechette Blasters" hidden="false" id="499b-a9c6-ea22-6c6a" type="selectionEntry" targetId="040c-c8a4-f3fb-e849"/>
-                <entryLink import="true" name="Taser Goads" hidden="false" id="ad92-4980-3679-9fd8" type="selectionEntry" targetId="9d79-69cb-9232-329c"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c80b-0754-f441-24db-min"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c80b-0754-f441-24db-max"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7013-02fb-e9d9-cf7b"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fb3-a54f-e788-d0e4"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Flechette Blasters and Taser Goads" hidden="false" id="252c-6ae1-17a3-0f20">
+              <entryLinks>
+                <entryLink import="true" name="Flechette Blasters" hidden="false" id="c419-dd29-717e-4c4d" type="selectionEntry" targetId="040c-c8a4-f3fb-e849"/>
+                <entryLink import="true" name="Taser Goads" hidden="false" id="daf9-e59b-db7f-8089" type="selectionEntry" targetId="9d79-69cb-9232-329c"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stubcarbines and Power Swords" hidden="false" id="5df3-62ee-3b5e-0932">
+              <entryLinks>
+                <entryLink import="true" name="Stubcarbine" hidden="false" id="bb59-594f-269d-712c" type="selectionEntry" targetId="a7cc-88cb-c6e8-6d4c"/>
+                <entryLink import="true" name="Power Sword" hidden="false" id="9d6a-bd8d-8ff5-15f4" type="selectionEntry" targetId="a3cd-aa97-a148-2309"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
