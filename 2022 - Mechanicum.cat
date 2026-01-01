@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="53" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -7639,23 +7639,35 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Flechette Blasters and Taser Goads" hidden="false" id="252c-6ae1-17a3-0f20">
               <entryLinks>
-                <entryLink import="true" name="Flechette Blasters" hidden="false" id="c419-dd29-717e-4c4d" type="selectionEntry" targetId="040c-c8a4-f3fb-e849"/>
-                <entryLink import="true" name="Taser Goads" hidden="false" id="daf9-e59b-db7f-8089" type="selectionEntry" targetId="9d79-69cb-9232-329c"/>
+                <entryLink import="true" name="Flechette Blasters" hidden="false" id="c419-dd29-717e-4c4d" type="selectionEntry" targetId="040c-c8a4-f3fb-e849">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a583-39be-fd65-da67-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a583-39be-fd65-da67-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Taser Goads" hidden="false" id="daf9-e59b-db7f-8089" type="selectionEntry" targetId="9d79-69cb-9232-329c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ba9-7c45-bdc0-4a71-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ba9-7c45-bdc0-4a71-max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d58c-1240-af8c-3240-min"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d58c-1240-af8c-3240-max"/>
-              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Stubcarbines and Power Swords" hidden="false" id="5df3-62ee-3b5e-0932">
               <entryLinks>
-                <entryLink import="true" name="Stubcarbine" hidden="false" id="bb59-594f-269d-712c" type="selectionEntry" targetId="a7cc-88cb-c6e8-6d4c"/>
-                <entryLink import="true" name="Power Sword" hidden="false" id="9d6a-bd8d-8ff5-15f4" type="selectionEntry" targetId="a3cd-aa97-a148-2309"/>
+                <entryLink import="true" name="Stubcarbine" hidden="false" id="bb59-594f-269d-712c" type="selectionEntry" targetId="a7cc-88cb-c6e8-6d4c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6af4-df19-ab2b-1999-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6af4-df19-ab2b-1999-max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Sword" hidden="false" id="9d6a-bd8d-8ff5-15f4" type="selectionEntry" targetId="a3cd-aa97-a148-2309">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e2c-e5dd-c207-56f9-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e2c-e5dd-c207-56f9-max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b5f9-b269-000f-0fb3-min"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b5f9-b269-000f-0fb3-max"/>
-              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
