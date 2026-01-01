@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="59" battleScribeVersion="2.03" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="60" battleScribeVersion="2.03" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -8382,7 +8382,7 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Coaxial</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Cognis</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8486,6 +8486,15 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Conversion Field" hidden="false" id="471c-8d76-d409-636e">
+      <profiles>
+        <profile name="Conversion Field" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="a92a-73f0-a6a7-4bf5">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Conversion Field: 4++ invulnerable save. After successful save(s), at end of that phase, all units within D6&quot; must test Blind. Friendly units can re-roll a failed test.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -9502,8 +9511,7 @@ Treat Archmagos Anarcharis Scoria as an Archmagos Prime on Abeyant.</description
 • No Escape: The unit may not make a reaction in the following Assault Phase.</description>
     </rule>
     <rule name="Lumingen" id="fcab-d671-a170-f907" hidden="false">
-      <description>Units that suffer unsaved Wound[s], or penetrating or glancing hits, get -1 to cover saves until end of phase.
-Also units may re-roll charge range until end of turn.</description>
+      <description>Units that suffer unsaved Wound[s], or penetrating or glancing hits, get -1 to cover saves until end of phase, additionally any units charging may re-roll charge range until end of turn.</description>
     </rule>
     <rule name="Field Repairs" id="7f86-5dfe-b0bd-402f" hidden="false">
       <description>Models with this rules gains the &quot;It Will Not Die&quot; rule</description>

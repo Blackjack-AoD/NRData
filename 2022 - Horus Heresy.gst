@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="4" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="5" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="4ccbb79d-4a99-4828-af69-e600b4c38743" publisherUrl="https://github.com/Blackjack-AoD/NRData" shortName="Blackjack-AoD/NRData"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -11097,7 +11097,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
     </selectionEntry>
     <selectionEntry id="a29d-722b-3c72-4397" name="Saturnine Atomantic Deflector" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="92e0-8597-e85a-8bcb" name="Saturinine Atomantic Deflector" page="" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="92e0-8597-e85a-8bcb" name="Saturinine Atomantic Deflector" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an atomantic deflector gains a 4+ Invulnerable Save and any model with an atomantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with an atomantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6&quot; suffer an automatic Hit at Str 8, AP -.</characteristic>
           </characteristics>
@@ -11136,7 +11136,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
     </selectionEntry>
     <selectionEntry id="61af-f804-38d6-6986" name="Graviton Pulveriser" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="d6be-1a9d-94a5-1f83" name="Graviton Pulveriser" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="d6be-1a9d-94a5-1f83" name="Graviton Pulveriser" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
@@ -17851,7 +17851,7 @@ In addition, when moving in Hover mode, the controlling player may choose to inf
 Once assigned to a unit, the Legion Techmarine is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Legion Techmarine is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Legion Techmarine as a casualty. When assigned to a unit, a Legion Techmarine gains all of the special rules (with the exception of those that specifically forbid it, such as the Bitter Duty special rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional Wargear options available to the unit to which it is assigned.</description>
     </rule>
     <rule id="c503-f5b8-3da0-16e6" name="Void Shields" publicationId="a716-c1c4-7b26-8424" page="127" hidden="false">
-      <description>A model with this special rule has a number of void shields, as listed on its profile. Shooting Attacks which Hit a model with this special rule instead target this model’s void shields while at least one remains active. Void shields have an Armour Value of 12. A successful Glancing Hit, Penetrating Hit or any successful Hit from a Destroyer weapon which targets a void shield causes it to collapse, reducing the number ‘X’ by -1. When the number of void shields is reduced to 0, this special rule has no further effect and subsequent Shooting Attacks target the model instead. Void shields have no effect on close combat attacks, and may not be affected by close combat attacks.</description>
+      <description>A model with this special rule has a number of void shields, as listed on its profile. Against Shooting Attacks this model has a 4+ invulnerable save. Each failed save, or any successful Hit from a Destroyer weapon causes a void shield to collapse, discarding the hit and removing the number of void shields by -1. When the number of void shields is reduced to 0, this model no longer has an invulnerable save and damage is taken as normal. At the start of the controlling player&apos;s turn, before the movement phase, roll for each removed void shield this model has. Each roll of 5+ restores one void shield. Void shields have no effect on close combat attacks, and may not be affected by close combat attacks.</description>
     </rule>
     <rule id="0662-8b8d-38e8-60f8" name="Transport Bay" publicationId="a716-c1c4-7b26-8424" page="126" hidden="false">
       <description>A model with this special rule may carry models of the Dreadnought and Automata Unit Types, as well as models with the Cavalry Unit Type but not the Antigrav Sub-type. Each Dreadnought model uses 10 points of Transport Capacity, while each Automata and Cavalry model uses up a number of Transport Capacity points equal to twice its starting Wounds Characteristic.</description>
@@ -17872,7 +17872,7 @@ Once assigned to a unit, the Legion Techmarine is considered part of that unit a
       <description>If a model that has a weapon with this special rule does not move in the Movement phase of a given turn, that weapon may be given the Rending (4+) and Pinning special rules until the start of the controlling player’s next turn.</description>
     </rule>
     <rule id="6b79-ac44-4d89-2124" name="Retinue" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
-      <description>A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may only be selected as part of a Detachment that includes at least one model with the Master of the Legion special rule. A unit selected in this manner is considered a ‘Retinue Squad’ and the model with the Master of the Legion special rule is referred to as the Retinue Squad’s Leader for the purposes of this special rule (if the Detachment includes more than one model with the Master of the Legion special rule then the controlling player selects one as the unit’s Leader). The Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. The Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may not be selected as part of an army without a Leader.</description>
+      <description>A Legion Command Squad, Legion Cataphractii Terminator Command Squad, Legion Saturnine Terminator Command Squad or Legion Tartaros Command Squad may only be selected as part of a Detachment that includes at least one model with the Master of the Legion special rule. A unit selected in this manner is considered a ‘Retinue Squad’ and the model with the Master of the Legion special rule is referred to as the Retinue Squad’s Leader for the purposes of this special rule (if the Detachment includes more than one model with the Master of the Legion special rule then the controlling player selects one as the unit’s Leader). The Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. The Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. A Legion Command Squad, Legion Cataphractii Terminator Command Squad, Legion Saturnine Terminator Command Squad or Legion Tartaros Command Squad may not be selected as part of an army without a Leader.</description>
     </rule>
     <rule id="857b-1adc-8233-6c55" name="Repair" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
       <description>In any of the controlling player’s Shooting phases, instead of making any Shooting Attacks with a model with this special rule, the controlling player may instead roll a D6. On the roll of a ‘4’ or more, a damage result of Immobilised that has been inflicted on this model may be removed but no Hull Points are returned.</description>
@@ -18225,6 +18225,18 @@ Attacks with this special rule have no effect on models with the Vehicle or Prim
 
 
 Any hit roll equal to or greater than the value of X is an automatic wound without any dice being rolled, and increases the value of the  Brutal Special rule by +1 if the attack has it. If the attack doesn&apos;t have the Brutal Special rule it gains Brutal(2) for that hit only. Saves and damage mitigation rolls may be taken as normal.</description>
+    </rule>
+    <rule name="Cognis" id="3d4f-d780-8195-0365" hidden="false" publicationId="e1ebd931--pubd1e17749">
+      <description>Snap shots at Ballistic Skill 2 instead of 1, template weapons automatically cause 3 hits instead of D3 when firing snapshots</description>
+    </rule>
+    <rule name="Joust" id="1d3f-91c5-2f87-adf6" hidden="false" publicationId="e1ebd931--pubd1e17749">
+      <description>Double the model&apos;s Initiative for the first round of combat after a successful charge.</description>
+    </rule>
+    <rule name="Taser" id="381f-6c13-cbb8-0557" hidden="false">
+      <description>Each 6 rolled To Hit causes an additional 2 hits</description>
+    </rule>
+    <rule name="Neurostatic Aura" id="3ed8-2f6c-fffb-e86b" hidden="false">
+      <description>All enemy models within 6&quot; of one or more models with this special rule subtract 1 from their Weapon Skill, Ballistic Skill, Initiative and Leadership</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

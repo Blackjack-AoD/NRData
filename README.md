@@ -27,10 +27,14 @@ Changes from Second Edition:
 - Added Veteran Heavy Support squad with Disintegrator blaster and Heavy Disintegrator into Elites
 - Modified Caestus Assault Ram Misercorde back to HHv1 rules, changed transport capacity to 12. puts it back in line with intended use
 
-### Mechanicum
-- Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in 
+### Mechanicum/Titan Legions
+- Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in, Radium Jazzail also added
 - Added new Cyberthuergic Arcana discipline, Artificia Gladatoris - Adds Melee Focus, ability to add +1WS to automata
-- Added Dunecrawler from Codex Skitarii 7th Edition, with all the weapon options that entails. added as an Armiger type
+- Added Dunecrawler from Codex Skitarii 7th Edition, with all the weapon options that entails. added as an Armiger type to HS for Titan legions
+- Changed void shields so they no longer suck
+- Added Sydonian Dragoons to FA slot for Titan legions
+- Added Ironstrider Ballistarius to HS for Titan Legions
+- Added Sicaran Infiltartors to Elites for Titan Legions
 
 
 ## Standards
