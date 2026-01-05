@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" revision="15" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" revision="16" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Retinue" hidden="false" id="5b3d-ea70-4774-c23d" collective="false" import="true">
       <comment>template_id_be38-a066-4f8e-ae54</comment>
@@ -2059,17 +2059,9 @@ When you do so, replace this model’s Legiones Astartes (Salamanders) special r
         <categoryLink targetId="36c3-e85e-97cc-c503" id="70db-3adb-e89d-4259" primary="false" name="Unit:"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Praetor, Saturnine" hidden="false" id="644f-986b-fe68-d21e" type="selectionEntry" targetId="ed8e-ca93-067e-76b5">
-      <entryLinks>
-        <entryLink import="true" name="Warlord Traits" hidden="false" id="f003-5217-0afd-0142" type="selectionEntryGroup" targetId="9b47-e234-7f96-3cec"/>
-        <entryLink import="true" name="Retinue" hidden="false" id="a1be-1988-33a9-057b" type="selectionEntryGroup" targetId="5b3d-ea70-4774-c23d">
-          <entryLinks>
-            <entryLink import="true" name="Command Squad, Saturnine" hidden="false" id="d02e-9e23-2846-fddb" type="selectionEntry" targetId="56fe-eaa7-8fc2-99e8"/>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
+    <entryLink import="true" name="Centurion, Saturnine" hidden="false" id="595b-1841-9edf-7061" type="selectionEntry" targetId="4776-9a88-24f5-bbb3">
       <categoryLinks>
-        <categoryLink targetId="4f85-eb33-30c9-8f51" id="5291-cab6-ef58-869b" primary="true" name="HQ:"/>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="73fc-1903-1334-9374" primary="true" name="HQ:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

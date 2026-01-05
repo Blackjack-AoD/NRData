@@ -26,6 +26,7 @@ Changes from Second Edition:
 - Added Saturnine Dreadnought
 - Added Veteran Heavy Support squad with Disintegrator blaster and Heavy Disintegrator into Elites
 - Modified Caestus Assault Ram Misercorde back to HHv1 rules, changed transport capacity to 12. puts it back in line with intended use
+- Added Centurion in Saturnine Armour
 
 ### Mechanicum/Titan Legions
 - Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in, Radium Jazzail also added

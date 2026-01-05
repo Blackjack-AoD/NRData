@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="67" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="68" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
@@ -5497,6 +5497,11 @@
       <categoryLinks>
         <categoryLink name="Heavy Support:" hidden="false" id="7289-8596-0f01-0b09" targetId="7031-469a-1aeb-eab0" primary="true"/>
         <categoryLink name="Unit:" hidden="false" id="a002-ca1d-499e-4cab" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Centurion, Saturnine" hidden="false" id="2f69-5bb4-e759-cfc3" type="selectionEntry" targetId="4776-9a88-24f5-bbb3">
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="ec86-3cc2-738a-3791" primary="true" name="HQ:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
