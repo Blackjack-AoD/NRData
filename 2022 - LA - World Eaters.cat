@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="52" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="53" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="d647-fd99-73e0-bd57" name="Angron" hidden="false" collective="false" import="false" targetId="6352-8efa-0cc4-cfa7" type="selectionEntry">
       <modifiers>
@@ -3084,6 +3084,8 @@
     <entryLink import="true" name="Centurion, Saturnine" hidden="false" id="e5b6-2fad-be4e-89bb" type="selectionEntry" targetId="4776-9a88-24f5-bbb3">
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="2927-93cf-43e0-74a8" primary="true" name="HQ:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="f120-1aa3-141f-61c6" primary="false" name="Unit:"/>
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="847e-b709-736a-558a" primary="false" name="Compulsory HQ:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="55" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="fe10-3104-0252-96de" name="Nârik Dreygur" hidden="true" collective="false" import="false" targetId="ac97-c8ce-16ba-9c49" type="selectionEntry">
       <modifiers>
@@ -3101,6 +3101,8 @@
     <entryLink import="true" name="Centurion, Saturnine" hidden="false" id="029f-2ac9-5dc6-71fb" type="selectionEntry" targetId="4776-9a88-24f5-bbb3">
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="7fc7-6a9f-a065-4a07" primary="true" name="HQ:"/>
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="ca33-4947-62e4-8fe2" primary="false" name="Compulsory HQ:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="7190-c1bf-9efe-729d" primary="false" name="Unit:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

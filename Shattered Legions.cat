@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legions Astartes" id="50ca-2201-2e00-f825" targetId="6393-649c-7213-a327" importRootEntries="true"/>
   </catalogueLinks>
@@ -1602,6 +1602,8 @@
     <entryLink import="true" name="Centurion, Saturnine" hidden="false" id="79fe-acdb-400a-043d" type="selectionEntry" targetId="4776-9a88-24f5-bbb3">
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="54fe-ade2-5003-9cae" primary="true" name="HQ:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="eda7-f630-f798-146a" primary="false" name="Unit:"/>
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="75b0-a8bd-d337-a20a" primary="false" name="Compulsory HQ:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

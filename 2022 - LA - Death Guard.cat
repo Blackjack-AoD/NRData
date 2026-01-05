@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="50" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -3087,6 +3087,8 @@
     <entryLink import="true" name="Centurion, Saturnine" hidden="false" id="fead-d9e8-31bd-bbd0" type="selectionEntry" targetId="4776-9a88-24f5-bbb3">
       <categoryLinks>
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="f7de-bbb7-08b5-cac9" primary="true" name="HQ:"/>
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="a9bc-1e0c-455d-9869" primary="false" name="Compulsory HQ:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="2c6c-272c-cc34-e5fa" primary="false" name="Unit:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
