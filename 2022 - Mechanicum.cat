@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="54" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="55" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -7183,15 +7183,15 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a7dc-8ecb-c2dc-39b6" name="Onager Dunecrawler Talon" publicationId="e1ebd931--pubd1e17749" page="" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a7dc-8ecb-c2dc-39b6" name="Onager Dunecrawler Talon" publicationId="e1ebd931--pubd1e17749" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
-        <selectionEntry id="9789-6109-d93b-962b" name="Onager Dunecrawler" publicationId="e1ebd931--pubd1e17749" page="" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="9789-6109-d93b-962b" name="Onager Dunecrawler" publicationId="e1ebd931--pubd1e17749" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b85d-e802-d03e-7f43" type="min"/>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3b-835c-9711-f345" type="max"/>
           </constraints>
           <profiles>
-            <profile id="5622-4018-d011-37bb" name="Onager Dunecrawler" publicationId="e1ebd931--pubd1e17749" page="" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="5622-4018-d011-37bb" name="Onager Dunecrawler" publicationId="e1ebd931--pubd1e17749" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Armiger</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -7400,9 +7400,9 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
         <profile name="Radium jezzail" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5979-6e3d-686d-bcfd">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">X</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"> Heavy 2, Sniper, Brutal(2), Rending(6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sniper, Brutal(2), Rending(6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
