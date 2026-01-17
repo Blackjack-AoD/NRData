@@ -110,12 +110,14 @@
       <categoryLinks>
         <categoryLink id="6a27-5000-b509-a7d7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="032c-b742-5238-a7dc" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink targetId="6399-5c65-7833-1025" id="0362-d042-e914-91ca" primary="false" name="Line Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d42f-542d-2cba-8d45" name="Secutarii Peltast Phalanx" hidden="false" collective="false" import="false" targetId="4fc3-7259-f9b0-71cd" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8940-f885-bcc9-b74f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="a270-c7de-cbbf-fd44" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink targetId="6399-5c65-7833-1025" id="5936-8dfc-b84d-b2eb" primary="false" name="Line Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3db2-0def-e7f6-b22e" name="Clade Assassins (Loyalist)" hidden="false" collective="false" import="false" targetId="7363-5a05-4102-24fa" type="selectionEntry">
