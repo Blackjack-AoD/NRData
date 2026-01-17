@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="57" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="58" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -7733,7 +7733,7 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
@@ -7896,7 +7896,7 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
         <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="967d-c5b6-7cfe-4775" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry id="c64a-c424-b6da-890f" name="Accipiter Pattern-Automata Squadron" publicationId="bde1-6db1-163b-3b76" page="43" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c64a-c424-b6da-890f" name="Accipiter Pattern-Automata Squadron" page="43" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="657e-b4dc-2161-9aa3" name="Automata Unit Type" hidden="false" targetId="d8ab-8e21-e193-63ba" primary="false"/>
         <categoryLink id="0ce1-092c-9aa5-aff7" name="Cybernetica Sub-type" hidden="false" targetId="2440-b64e-cb24-87f0" primary="false"/>
@@ -7936,9 +7936,9 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
@@ -7952,11 +7952,6 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="b3b5-a22e-54fc-502a" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="It Will Not Die (5+)"/>
-              </modifiers>
-            </infoLink>
             <infoLink id="c2fe-89d5-f0be-159b" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule"/>
           </infoLinks>
           <selectionEntries>
