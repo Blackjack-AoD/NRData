@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="56" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="57" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -7810,12 +7810,45 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Havoc Launcher" hidden="false" id="953b-8699-dea3-0c0f" type="selectionEntry" targetId="bde9-5abf-ec3d-2273"/>
-                <entryLink import="true" name="Missile Launcher with Frag, Krak and Ignis Missiles" hidden="false" id="be12-eaa8-4da0-ff4b" type="selectionEntry" targetId="6c5e-befd-dbd7-7a16">
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Missile Launcher with Frag, Krak and Ignis Missiles" hidden="false" id="dd12-fac6-9f78-fe64">
+                  <profiles>
+                    <profile name="Missile Launcher - Frag" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="dcc7-1f5b-4620-8af1" publicationId="a716-c1c4-7b26-8424" page="133">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Pinning</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Missile Launcher - Ignis" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1928-f69f-2478-10f0" publicationId="bde1-6db1-163b-3b76" page="118">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Missile Launcher - Krak" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="31a0-8039-5459-50f4" publicationId="a716-c1c4-7b26-8424" page="133">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="79ce-09ab-713d-a88e" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
+                    <infoLink name="Ignores Cover" id="315e-7d34-2c51-9a80" hidden="false" type="rule" targetId="fdb5-59e2-c446-1cbc"/>
+                    <infoLink name="Pinning" id="a23e-8cbd-349c-6fcc" hidden="false" type="rule" targetId="1c96-205c-59a0-3cf2"/>
+                  </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
-                </entryLink>
-              </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Must take one of the following" id="7364-7d64-58c8-dd6f" hidden="false" defaultSelectionEntryId="40b9-a546-d602-16e3">
               <constraints>
