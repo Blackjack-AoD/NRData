@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="55" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="56" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -693,6 +693,16 @@
       <constraints>
         <constraint type="max" value="0" field="selections" scope="force" shared="false" id="8e82-1d5b-2445-fa8f" includeChildSelections="true"/>
       </constraints>
+    </entryLink>
+    <entryLink import="true" name="Herax Battle-Automata Maniple" hidden="false" id="505d-6100-5a3d-2506" type="selectionEntry" targetId="c8bd-a163-1ef2-bffe">
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="ebff-8a33-fe52-3ea6" primary="true" name="Fast Attack:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Accipiter Pattern-Automata Squadron" hidden="false" id="2e3c-f472-b6da-8450" type="selectionEntry" targetId="c64a-c424-b6da-890f">
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="b01a-df48-b861-f4d2" primary="true" name="Fast Attack:"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -7679,6 +7689,341 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46f0-47c0-14fd-dd78-max"/>
           </constraints>
         </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="c8bd-a163-1ef2-bffe" name="Herax Battle-Automata Maniple" publicationId="bde1-6db1-163b-3b76" page="43" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="4525-3ba4-9b97-d668" name="Automata Unit Type" hidden="false" targetId="d8ab-8e21-e193-63ba" primary="false"/>
+        <categoryLink id="506b-a822-4041-a9f2" name="Cybernetica Sub-type" hidden="false" targetId="2440-b64e-cb24-87f0" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9c25-cdac-8b4d-fae0" name="Herax" page="43" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c9b-ef32-372f-05b3" type="min"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a8e-d81b-4bcf-1686" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="08f7-016b-665c-e399" name="Herax" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="cc42-7ed5-7092-5c84" value="1">
+                  <conditions>
+                    <condition field="selections" scope="9c25-cdac-8b4d-fae0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
+                  <conditions>
+                    <condition field="selections" scope="9c25-cdac-8b4d-fae0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Paragon)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="c8bd-a163-1ef2-bffe" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Ruinous Cybernetica)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="c8bd-a163-1ef2-bffe" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">10</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="09b0-f6f5-ccd4-5d8f" name="Surveillance Protocols" publicationId="bde1-6db1-163b-3b76" page="108" hidden="false">
+              <description>A model with this special rule and the Cybernetica Unit Sub-type may ignore the Programmed Behaviour provision described as part of that Sub-type during the Charge sub-phase.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Scout" id="b782-34f1-92ce-27ec" hidden="false" type="rule" targetId="aacf-9a7e-982d-b793"/>
+            <infoLink name="Infiltrate" id="899d-0b28-dce6-cea5" hidden="false" type="rule" targetId="0e32-5b92-a95a-8464"/>
+            <infoLink name="Move Through Cover" id="1324-7cc6-7ea7-dc76" hidden="false" type="rule" targetId="2b6f-bfec-759e-1746"/>
+            <infoLink name="Hammer of Wrath (X)" id="9f8f-0573-4025-9423" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+              <modifiers>
+                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="0aa7-0eb4-7bda-ae3a" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="1" field="selections" scope="c8bd-a163-1ef2-bffe" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="c8bd-a163-1ef2-bffe" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9f51-0d84-fb22-0e62" name="Atomantic Deflector" hidden="false" collective="false" import="true" targetId="38fb-9a0b-edef-a497" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="270e-0437-5556-f656" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d67f-e4bf-c40d-4e87" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlights" hidden="false" id="2b44-e6e8-5cb4-8978" type="selectionEntry" targetId="4ae3-79b4-6051-505e"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="d8ab-8e21-e193-63ba" id="49e6-50fb-574b-52a6" name="Automata Unit Type" primary="false"/>
+            <categoryLink targetId="4303-1348-cce4-9501" id="ffcd-24d4-83ab-5bf4" name="Antigrav Sub-type" primary="false"/>
+            <categoryLink targetId="2440-b64e-cb24-87f0" id="fbab-ed08-1576-7de4" name="Cybernetica Sub-type" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="c8bd-a163-1ef2-bffe" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="c8bd-a163-1ef2-bffe" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Must take one of the following" id="02f9-8139-1513-67aa" hidden="false" defaultSelectionEntryId="953b-8699-dea3-0c0f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="629b-a343-61f6-8a7b-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="629b-a343-61f6-8a7b-max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Havoc Launcher" hidden="false" id="953b-8699-dea3-0c0f" type="selectionEntry" targetId="bde9-5abf-ec3d-2273"/>
+                <entryLink import="true" name="Missile Launcher with Frag, Krak and Ignis Missiles" hidden="false" id="be12-eaa8-4da0-ff4b" type="selectionEntry" targetId="6c5e-befd-dbd7-7a16">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Must take one of the following" id="7364-7d64-58c8-dd6f" hidden="false" defaultSelectionEntryId="40b9-a546-d602-16e3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d56c-531f-6f53-d15b-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d56c-531f-6f53-d15b-max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Mauler Bolt Cannon" hidden="false" id="40b9-a546-d602-16e3" type="selectionEntry" targetId="7478-2c29-dfc4-f4cf"/>
+                <entryLink import="true" name="Irradiation Engine" hidden="false" id="1d44-8f2c-0c1d-7c1e" type="selectionEntry" targetId="5d14-047a-bc9c-5d00">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Multi-Melta" hidden="false" id="cde5-a45a-78e5-2b3c" type="selectionEntry" targetId="9332-3834-cf3a-56b4">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Eradication Beamer" hidden="false" id="4b48-c00c-daf4-b8cd" type="selectionEntry" targetId="a946-6406-cffd-2c7f">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+      </costs>
+      <modifiers>
+        <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="c8bd-a163-1ef2-bffe" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="c8bd-a163-1ef2-bffe" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="967d-c5b6-7cfe-4775" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="c64a-c424-b6da-890f" name="Accipiter Pattern-Automata Squadron" publicationId="bde1-6db1-163b-3b76" page="43" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="657e-b4dc-2161-9aa3" name="Automata Unit Type" hidden="false" targetId="d8ab-8e21-e193-63ba" primary="false"/>
+        <categoryLink id="0ce1-092c-9aa5-aff7" name="Cybernetica Sub-type" hidden="false" targetId="2440-b64e-cb24-87f0" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b88c-048c-57da-a445" name="Accipiter" publicationId="bde1-6db1-163b-3b76" page="43" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f56-c77d-4f6c-e472" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa33-a5c1-124c-fed0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a334-e153-29b1-2fe0" name="Accipiter" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="cc42-7ed5-7092-5c84" value="1">
+                  <conditions>
+                    <condition field="selections" scope="b88c-048c-57da-a445" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
+                  <conditions>
+                    <condition field="selections" scope="b88c-048c-57da-a445" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Antigrav, Paragon)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="c64a-c424-b6da-890f" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Antigrav, Ruinous Cybernetica)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="c64a-c424-b6da-890f" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Antigrav, Cybernetica)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="72d3-7407-9386-25b1" name="Surveillance Protocols" publicationId="bde1-6db1-163b-3b76" page="108" hidden="false">
+              <description>A model with this special rule and the Cybernetica Unit Sub-type may ignore the Programmed Behaviour provision described as part of that Sub-type during the Charge sub-phase.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="b3b5-a22e-54fc-502a" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="c2fe-89d5-f0be-159b" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="c398-e7a7-08f2-795e" name="Stratos Thrusters" publicationId="bde1-6db1-163b-3b76" page="130" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e1a-8c37-600c-6d78" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f091-c9bf-26ed-c803" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9d25-dce4-a39e-f506" name="Stratos Thrusters" publicationId="bde1-6db1-163b-3b76" page="130" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with Stratos thrusters may set its Move Characteristic to a value of 16&quot; for the duration of the controlling player’s turn. This allows the unit to move up to 16&quot;, regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 16&quot; (including the bonus to Charge distance). In addition, Stratos thrusters allow units to hover above the battlefield and thus ignore the effects of Difficult Terrain and Dangerous Terrain at all times.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="7c23-cae0-715e-ec90" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="1" field="selections" scope="c64a-c424-b6da-890f" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="c64a-c424-b6da-890f" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+              </costs>
+            </entryLink>
+            <entryLink id="82e4-c298-b056-9bdf" name="Atomantic Deflector" hidden="false" collective="false" import="true" targetId="38fb-9a0b-edef-a497" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf72-ee6b-31c5-9b62" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="555e-a642-975d-cc14" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="d8ab-8e21-e193-63ba" id="76fc-0258-ad7c-e280" name="Automata Unit Type" primary="false"/>
+            <categoryLink targetId="4303-1348-cce4-9501" id="9fee-bae1-33a5-a77d" name="Antigrav Sub-type" primary="false"/>
+            <categoryLink targetId="2440-b64e-cb24-87f0" id="913e-8311-cfab-eb2e" name="Cybernetica Sub-type" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="c64a-c424-b6da-890f" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="c64a-c424-b6da-890f" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Must take a pair of either" id="202e-7b33-a1e5-cbcf" hidden="false" defaultSelectionEntryId="7694-864e-49e6-6c6b">
+              <entryLinks>
+                <entryLink import="true" name="Irradiation Engine" hidden="false" id="6076-e759-8558-6169" type="selectionEntry" targetId="5d14-047a-bc9c-5d00">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Mauler Bolt Cannon" hidden="false" id="7694-864e-49e6-6c6b" type="selectionEntry" targetId="7478-2c29-dfc4-f4cf"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2ad-d41c-f057-e7b7-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2ad-d41c-f057-e7b7-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+      </costs>
+      <modifiers>
+        <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="c64a-c424-b6da-890f" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="c64a-c424-b6da-890f" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="2558-dc0e-fd16-0ee0" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
       </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>

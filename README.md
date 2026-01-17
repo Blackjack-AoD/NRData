@@ -37,6 +37,8 @@ Changes from Second Edition:
 - Added Ironstrider Ballistarius to HS for Titan Legions
 - Added Sicaran Infiltrators to Elites for Titan Legions
 - Added Transuranic Arquebus and added new unit - Secutarii Pellentesque 1-3 skitarii with Arquebus'
+- Added Herax pattern automata maniple from Panoptica Liber Ingenium
+- Added Accipiter Pattern-Automata Squadron based on the Herax, to represent pre corrupted Foetid Blight drone
 
 
 ## Standards
