@@ -27,6 +27,7 @@ Changes from Second Edition:
 - Added Veteran Heavy Support squad with Disintegrator blaster and Heavy Disintegrator into Elites
 - Modified Caestus Assault Ram Misercorde back to HHv1 rules, changed transport capacity to 12. puts it back in line with intended use
 - Added Centurion in Saturnine Armour
+- Added Veteran Breacher Squad to elites
 
 ### Mechanicum/Titan Legions
 - Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in, Radium Jazzail also added
@@ -40,6 +41,8 @@ Changes from Second Edition:
 - Added Herax pattern automata maniple from Panoptica Liber Ingenium
 - Added Accipiter Pattern-Automata Squadron based on the Herax, to represent pre corrupted Foetid Blight drone
 - Made Both Secutarii units Line
+- Added Galvantic Blaster/Plasma Blaster to Secutarii Peltasts
+- Added VenomCrawler to Dark Mechanicum elites choice, similar to a Blood Slaughterer
 
 
 ## Standards

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="57" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="58" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="a738-6a11-dfe7-286c" name="V: White Scars" hidden="false" collective="false" import="false" targetId="e01e-5cdd-e512-8353" type="selectionEntry">
       <modifiers>
@@ -3355,6 +3355,12 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="dce5-e2f4-36af-85ff" primary="false" name="Unit:"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Veteran Heavy Support Squad" hidden="false" id="8788-48d1-ecbf-b930" type="selectionEntry" targetId="f2ab-6166-26b8-14e6">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="c322-72a8-854c-1291" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Veteran Breacher Squad" hidden="false" id="9e6e-b453-0e82-7675" type="selectionEntry" targetId="d79d-f5a4-7ac5-a64a"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="1d55-faa7-caa5-a132" name="Golden Keshig Squadron" hidden="false" collective="false" import="true" type="unit">

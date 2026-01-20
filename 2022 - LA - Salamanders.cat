@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="55" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="56" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <modifiers>
@@ -3411,6 +3411,16 @@
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="7a40-514e-ae38-2d8a" primary="true" name="HQ:"/>
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="99da-0fcc-682b-ea23" primary="false" name="Compulsory HQ:"/>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="c82d-920e-c987-ce3f" primary="false" name="Unit:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Veteran Heavy Support Squad" hidden="false" id="5f53-3009-1f80-b176" type="selectionEntry" targetId="f2ab-6166-26b8-14e6">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="dc90-aef7-84cf-5d87" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Veteran Breacher Squad" hidden="false" id="8615-037f-8411-ed63" type="selectionEntry" targetId="d79d-f5a4-7ac5-a64a">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="a56f-7ace-91cc-c76c" primary="true" name="Elites:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="58" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="59" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -702,6 +702,11 @@
     <entryLink import="true" name="Accipiter Pattern-Automata Squadron" hidden="false" id="2e3c-f472-b6da-8450" type="selectionEntry" targetId="c64a-c424-b6da-890f">
       <categoryLinks>
         <categoryLink targetId="20ef-cd01-a8da-376e" id="b01a-df48-b861-f4d2" primary="true" name="Fast Attack:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Venomcrawler" hidden="false" id="1400-c8ff-e6a2-e19f" type="selectionEntry" targetId="a922-6d1c-03a0-61a3">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="f596-a943-1a26-d7b3" primary="true" name="Elites:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

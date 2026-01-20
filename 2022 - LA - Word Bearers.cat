@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="56" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="57" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="821c-0c83-5ed0-ff6b" name="Harbinger of Chaos Restriction" hidden="false">
       <modifiers>
@@ -3425,6 +3425,16 @@
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="d40d-cfe7-7d57-afd5" primary="true" name="HQ:"/>
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="6bec-d2db-2d02-7a58" primary="false" name="Compulsory HQ:"/>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="1e08-4533-970d-5151" primary="false" name="Unit:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Veteran Heavy Support Squad" hidden="false" id="78f8-1a87-68a7-2c00" type="selectionEntry" targetId="f2ab-6166-26b8-14e6">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="76e6-60ed-ffad-e57a" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Veteran Breacher Squad" hidden="false" id="7426-6a36-b687-7408" type="selectionEntry" targetId="d79d-f5a4-7ac5-a64a">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="fbb6-b35d-15da-89a5" primary="true" name="Elites:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

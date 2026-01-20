@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="56" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="57" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="fe10-3104-0252-96de" name="Nârik Dreygur" hidden="true" collective="false" import="false" targetId="ac97-c8ce-16ba-9c49" type="selectionEntry">
       <modifiers>
@@ -3103,6 +3103,16 @@
         <categoryLink targetId="4f85-eb33-30c9-8f51" id="7fc7-6a9f-a065-4a07" primary="true" name="HQ:"/>
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="ca33-4947-62e4-8fe2" primary="false" name="Compulsory HQ:"/>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="7190-c1bf-9efe-729d" primary="false" name="Unit:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Veteran Heavy Support Squad" hidden="false" id="ed96-91ff-c15e-a872" type="selectionEntry" targetId="f2ab-6166-26b8-14e6">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="b98c-dd08-b92e-baea" primary="true" name="Elites:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Veteran Breacher Squad" hidden="false" id="b8bc-2615-c6af-7b22" type="selectionEntry" targetId="d79d-f5a4-7ac5-a64a">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="aaae-a912-bc1f-06f8" primary="true" name="Elites:"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
