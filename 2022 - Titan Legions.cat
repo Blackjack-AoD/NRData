@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c01b-0224-f806-0d23" name="Titan Legions" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c01b-0224-f806-0d23" name="Titan Legions" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <forceEntries>
     <forceEntry id="aebe-bed9-b32f-a8ea" name="0. Titan Maniple" hidden="false">
       <categoryLinks>
@@ -861,7 +861,7 @@
             <entryLink import="true" name="Galvanic Rifle" hidden="false" id="df7d-5da0-f737-dba7" type="selectionEntry" targetId="f5f0-318e-e3b2-95a5"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="5aa9-2400-8d15-048a" name="Any model in the squad may exchange their Galvanic Caster for a:" hidden="false" collective="false" import="true" defaultSelectionEntryId="7a78-3fd7-831c-bbfd">
+        <selectionEntryGroup id="5aa9-2400-8d15-048a" name="Any model in the squad may exchange their Galvanic Caster for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="7a78-3fd7-831c-bbfd">
           <modifiers>
             <modifier type="increment" field="186f-5ac9-089e-480d" value="1">
               <repeats>
@@ -877,7 +877,7 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9192-122a-bf3f-08e8" type="min"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="186f-5ac9-089e-480d" type="max"/>
+            <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="186f-5ac9-089e-480d" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="7a78-3fd7-831c-bbfd" name="Galvanic Caster" hidden="false" collective="false" import="true" targetId="af1d-7611-f4e2-f09e" type="selectionEntry"/>
@@ -896,7 +896,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="062e-502b-f942-13d2"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Plasma Blaster" hidden="false" id="e26e-c057-d62d-2650" type="selectionEntry" targetId="cd52-e9e8-3ab1-995c">
+            <entryLink import="true" name="Plasma Caliver" hidden="false" id="e26e-c057-d62d-2650" type="selectionEntry" targetId="4883-4329-bb0d-ff7f">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="7" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="8" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="4ccbb79d-4a99-4828-af69-e600b4c38743" publisherUrl="https://github.com/Blackjack-AoD/NRData" shortName="Blackjack-AoD/NRData"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -11145,6 +11145,29 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
         </infoLink>
         <infoLink id="e257-c5a6-16f8-e25d" name="Graviton Pulse" hidden="false" targetId="5b9c-2738-616c-abdf" type="rule"/>
         <infoLink id="5bd5-eb5d-5b04-e9c8" name="Haywire" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4883-4329-bb0d-ff7f" name="Plasma Caliver" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="bb2d-c2c6-b9db-b191" name="Plasma Caliver" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Breaching (4+), Gets Hot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="026a-64f9-45b0-043e" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b2dd-4061-9ab7-c240" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
