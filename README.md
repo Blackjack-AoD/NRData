@@ -28,6 +28,9 @@ Changes from Second Edition:
 - Modified Caestus Assault Ram Misercorde back to HHv1 rules, changed transport capacity to 12. puts it back in line with intended use
 - Added Centurion in Saturnine Armour
 - Added Veteran Breacher Squad to elites
+- Added Bayonets and Chain Bayonets to breachers, veteran breachers and Phalanx Warders, addendum to boarding shileds to allow their use
+- Contemptor Dread now ws4/bs4, Deredo ws4/bs5, Leviathan ws5/bs4
+- Updated Dreadnought weapon profiles to match Liber Melias
 
 ### Mechanicum/Titan Legions
 - Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in, Radium Jazzail also added
