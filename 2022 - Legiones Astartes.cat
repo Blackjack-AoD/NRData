@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="229" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="230" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -5818,7 +5818,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                             </conditionGroup>
                           </conditionGroups>
                           <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="449c-55ae-d56b-3514" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="1ade-0c02-5612-252b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -72245,11 +72245,6 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Saturnine Concussion Hammer" hidden="false" id="8ae1-73b0-a710-ae60" type="selectionEntry" targetId="7b41-fef3-c81f-9dfc">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                      </costs>
-                    </entryLink>
                     <entryLink import="true" name="Saturnine Disruption fist" hidden="false" id="d5b5-020c-81c9-2427" type="selectionEntry" targetId="ee82-cfc5-dbd3-2532">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -83274,14 +83269,6 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
     </selectionEntryGroup>
     <selectionEntryGroup name="Saturnine Melee Weapon" id="5787-c901-4e07-3002" hidden="false" defaultSelectionEntryId="none">
       <entryLinks>
-        <entryLink import="true" name="Saturnine Concussion Hammer" hidden="false" id="b15a-eb77-d782-a309" type="selectionEntry" targetId="7b41-fef3-c81f-9dfc">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a6f-30ef-8920-26c9"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Saturnine Disruption fist" hidden="false" id="26b7-7e7b-2fcf-39ce" type="selectionEntry" targetId="ee82-cfc5-dbd3-2532">
           <selectionEntryGroups>
             <selectionEntryGroup name="Add Particle Shredder" id="1989-3a47-2788-fd58" hidden="false" defaultSelectionEntryId="none">
