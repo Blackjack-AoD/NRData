@@ -31,6 +31,8 @@ Changes from Second Edition:
 - Added Bayonets and Chain Bayonets to breachers, veteran breachers and Phalanx Warders, addendum to boarding shileds to allow their use
 - Contemptor Dread now ws4/bs4, Deredo ws4/bs5, Leviathan ws5/bs4
 - Updated Dreadnought weapon profiles to match Liber Melias
+- Updated expanded options to toggle 40k units, 3rd ed units, expanded RoW and FoC and Liber Melias options on/off (Note, the units in there havent all been included in the toggle, just the toggle itself and a few units for testing)
+- Added Destroyer Company RoW, Destroyer units added to troops choice for this etc 
 
 ### Mechanicum/Titan Legions
 - Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in, Radium Jazzail also added

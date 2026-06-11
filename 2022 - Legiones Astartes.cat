@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="230" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="231" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -658,6 +658,31 @@ Additional rules are given to units based on Legion and Unit.</description>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="def1-1ec-e133-13db" primary="false" name="Unit:"/>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="1730-3469-813d-e1c5" primary="true" name="Troops:"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Destroyer Assault Squad" hidden="false" id="a5fb-ca7d-569b-16a7" type="selectionEntry" targetId="d30b-59bb-8ae0-36d1">
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="c0cb-bfc1-a31f-197b" primary="true" name="Troops:"/>
+        <categoryLink targetId="6399-5c65-7833-1025" id="eaa6-3774-64b2-4f22" primary="false" name="Line Sub-type"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="02da-95a1-5edd-221c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Mortalis Destroyer Squad" hidden="false" id="f4b2-5025-a3f8-13de" type="selectionEntry" targetId="dbd4-930e-e003-9449">
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="86d9-b6b5-7c86-b20d" primary="true" name="Troops:"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="02da-95a1-5edd-221c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -4905,13 +4930,18 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 </entryLink>
                 <entryLink id="513d-5628-b184-4c6b" name="Rad Grenades" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" value="false" field="hidden">
                       <comment>node_id_eafb-5453-4dd9-8623</comment>
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3b5-da3a-8c3b-3faf" type="equalTo">
-                          <comment>node_id_a02c-8632-499f-827c</comment>
-                        </condition>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="d3b5-da3a-8c3b-3faf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                              <comment>node_id_a02c-8632-499f-827c</comment>
+                            </condition>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="02da-95a1-5edd-221c" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -7257,13 +7287,18 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </entryLink>
                 <entryLink id="14a2-d984-5438-23f9" name="Rad Grenades" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" value="false" field="hidden">
                       <comment>node_id_eafb-5453-4dd9-8623</comment>
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3b5-da3a-8c3b-3faf" type="equalTo">
-                          <comment>node_id_a02c-8632-499f-827c</comment>
-                        </condition>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="d3b5-da3a-8c3b-3faf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                              <comment>node_id_a02c-8632-499f-827c</comment>
+                            </condition>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="02da-95a1-5edd-221c" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -19835,11 +19870,16 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <comment>node_id_eafb-5453-4dd9-8623</comment>
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3b5-da3a-8c3b-3faf" type="equalTo">
-                          <comment>node_id_a02c-8632-499f-827c</comment>
-                        </condition>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="d3b5-da3a-8c3b-3faf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                              <comment>node_id_a02c-8632-499f-827c</comment>
+                            </condition>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="02da-95a1-5edd-221c" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -22317,13 +22357,18 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                 </entryLink>
                 <entryLink id="6f1a-0834-4ca3-28e6" name="Rad Grenades" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" value="false" field="hidden">
                       <comment>node_id_eafb-5453-4dd9-8623</comment>
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3b5-da3a-8c3b-3faf" type="equalTo">
-                          <comment>node_id_a02c-8632-499f-827c</comment>
-                        </condition>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="d3b5-da3a-8c3b-3faf" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                              <comment>node_id_a02c-8632-499f-827c</comment>
+                            </condition>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="02da-95a1-5edd-221c" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -68355,6 +68400,11 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="33ba-ed8c-8247-3ec0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="e890-4297-28ce-b8b1" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
@@ -69109,6 +69159,11 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="33ba-ed8c-8247-3ec0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -70102,6 +70157,11 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="33ba-ed8c-8247-3ec0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="02d1-ddb2-3f59-f356" name="Araknae Quad Accelerator Platform" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
@@ -70828,6 +70888,11 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="33ba-ed8c-8247-3ec0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -72055,6 +72120,11 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="33ba-ed8c-8247-3ec0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="8aa7-e6c8-cc17-b584" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
@@ -72578,6 +72648,11 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="33ba-ed8c-8247-3ec0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -73551,6 +73626,11 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="33ba-ed8c-8247-3ec0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -75099,6 +75179,11 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="33ba-ed8c-8247-3ec0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <modifierGroups>
@@ -78319,6 +78404,23 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" value="f823-8c1d-6a87-26a1" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="02da-95a1-5edd-221c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="9335-7da8-087e-30de" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="384d-df82-14cb-f918" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <rules>
             <rule id="15c1-e648-eb75-eb59" name="Chain Fire" hidden="false">
@@ -78530,6 +78632,23 @@ While making a Chain Fire attack, a model with this special rule may make up to 
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                   </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="f823-8c1d-6a87-26a1" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="02da-95a1-5edd-221c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="384d-df82-14cb-f918" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="9335-7da8-087e-30de" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>

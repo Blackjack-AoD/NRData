@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="9" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="10" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="4ccbb79d-4a99-4828-af69-e600b4c38743" publisherUrl="https://github.com/Blackjack-AoD/NRData" shortName="Blackjack-AoD/NRData"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -2614,36 +2614,12 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
       <entryLinks>
         <entryLink id="3790-e8af-d3e2-0dec" name="Exemplary Option" hidden="false" collective="false" import="true" targetId="a149-55c5-23a1-9236" type="selectionEntryGroup"/>
         <entryLink id="e0e7-c67d-a672-77e3" name="Legacy Option" hidden="false" collective="false" import="true" targetId="58be-66fe-3385-cf9c" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Expanded RoW and FoC" hidden="false" id="bcca-9456-1f3a-588f" type="selectionEntryGroup" targetId="660e-5443-8772-fe3c"/>
+        <entryLink import="true" name="Expanded Liber Units" hidden="false" id="eded-0f57-6f81-783e" type="selectionEntryGroup" targetId="0808-10a7-162b-8be6"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="How to add an allied or lord of war detachment" hidden="false" id="7d8-ddbf-ce7b-78f9">
-      <categoryLinks>
-        <categoryLink targetId="ed41-7006-3494-4c24" id="8e06-717c-a608-c888" primary="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edec-c227-3cb6-85ff"/>
-      </constraints>
-      <rules>
-        <rule name="How to add an allied or lord of war detachment THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
-          <description>To add Lords of War or allied detachments, you now need to add the additional detachment to your list. To do this:
-In New Recruit:
-* Select List Options in the top right corner. 
-* Select &quot;Add Force&quot;
-* Select the appropriate faction.
-* Select the appropriate optional detachment (lord of war or allied) to add it to your list.
-
-On Battlescribe Mobile, after adding your initial detachment, press the + sign at the bottom left
-On Battlescribe Desktop, after adding your first force then just press add force again
-
-Then choose the army you wish to have a lord of war from, then pick &quot;Lord of War Detachment&quot;. This allows the choice of any LoW from any army as per the rules of HH2 (apart from the new Ruinstorm Deamons one can only be taken in a Lord of War Detachment for Ruinstorm Daemons).</description>
-        </rule>
-      </rules>
-      <modifiers>
-        <modifier type="set" value="0" field="edec-c227-3cb6-85ff"/>
-      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -14933,6 +14909,44 @@ Until Fulgrim Transfigured is placed on the battlefield in this manner, all mode
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Destroyer Company" hidden="false" id="02da-95a1-5edd-221c">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="d6b1-2e3b-f86b-9f54" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Destroyer Company" id="e864-b5c6-9ae9-9128" hidden="false">
+              <description>Effects
+• Legion Destroyer Assault Squads and Legion Mortalis Destroyer Squads may be selected as Troops choices in a detachment using this Rite of War.
+• Any unit composed entirely of models with the Bitter Duty, Cult of Morkai, or Shadow of Death Special Rules (though excluding any models with
+the Independent Character Special Rule) may be included in a Detachment using this Rite of War as a Troops choice.
+• Any model with the Character Sub-type in a Detachment who are not equipped with any pattern of Terminator Armour may be equipped with
+Rad Grenades for +10 points per model.
+• Any model equipped with a Missile Launcher may be equipped with Rad Missiles in addition to their normal equipment for +5 points per model.
+• Any model equipped with a Gravis Missile Launcher may be equipped with Rad Missiles in addition to their normal equipment for +5 points per
+model.
+• Models with the Independent Character Special Rule in a Detachment using this Rite of War may purchase the Bitter Duty Special Rule for
++15 points per model.
+• Any enemy Scoring or Denial unit destroyed whilst they are within control range of an Objective by a unit from a Detachment using this Rite of
+War awards the Controlling Player +1 Victory Point.
+Limitations
+• A model with the Siege Breaker or Moritat Legiones Consularis upgrade must be taken as the Compulsory HQ choice for an army using this Rite
+of War (but need not be chosen as the army Warlord). Note that this will preclude certain other characters from being included in the
+Detachment.
+• An army whose Primary Detachment is using this Rite of War may not select an Allied Detachment.
+• An Allied Detachment may not use this Rite of War.
+• A Detachment using this Rite of War may not select any Fortification choices.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -17297,6 +17311,74 @@ Special rules that are removed:
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Expanded RoW and FoC" id="660e-5443-8772-fe3c" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Expanded Rites of War" id="2258-57fe-9c06-23c1" hidden="false" defaultSelectionEntryId="d6b1-2e3b-f86b-9f54">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Expanded Rites On" hidden="false" id="d6b1-2e3b-f86b-9f54"/>
+            <selectionEntry type="upgrade" import="true" name="Expanded Rites Off" hidden="false" id="a33d-42a4-f97a-37eb"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="0ec0-0023-a52a-7c71"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c9de-dd5d-bb93-dc19"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Expanded Force Organisation Charts" id="8ff3-4f2a-46c0-afac" hidden="false" defaultSelectionEntryId="a34b-a40f-1306-c0ed">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Expanded Force Organisation On" hidden="false" id="a34b-a40f-1306-c0ed"/>
+            <selectionEntry type="upgrade" import="true" name="Expanded Force Organisation Off" hidden="false" id="b773-2da6-ef03-9f2b"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="3d8a-faab-1d93-d071"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="876e-707d-090e-fbd0"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Expanded Liber Units" id="0808-10a7-162b-8be6" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Liber Melias" id="19c8-c26f-b865-88cf" hidden="false" defaultSelectionEntryId="e56c-0043-01ed-a5c0">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Liber Melias Units On" hidden="false" id="e56c-0043-01ed-a5c0"/>
+            <selectionEntry type="upgrade" import="true" name="Liber Melias Units Off" hidden="false" id="2e3a-d591-054b-4568"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="edb6-30e9-7aed-73ac"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="91db-ff4d-7264-8c69"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Liber Panoptica" id="fe9b-4d97-ed49-780a" hidden="false" defaultSelectionEntryId="0e39-7cbd-70d5-8c09">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Liber Panoptica Units On" hidden="false" id="0e39-7cbd-70d5-8c09"/>
+            <selectionEntry type="upgrade" import="true" name="Liber Panoptica Units Off" hidden="false" id="0fe1-a575-1591-ab4f"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="7128-10eb-dfef-11f4"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="bb9a-16db-1815-a468"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="40k Units" id="c26a-f65c-a6f5-a3c1" hidden="false" defaultSelectionEntryId="1e8b-bbba-e168-86b1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="40k Units On" hidden="false" id="1e8b-bbba-e168-86b1"/>
+            <selectionEntry type="upgrade" import="true" name="40k Units Off" hidden="false" id="98ae-11e4-a762-facc"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="2732-bd47-aa8d-d020"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="8707-f95d-78fc-3d73"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="3rd Edition Units" id="c238-d1d4-bdf0-c92e" hidden="false" defaultSelectionEntryId="33ba-ed8c-8247-3ec0">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="3rd Edition Units Off" hidden="false" id="5c15-f0e4-efcf-bf9c"/>
+            <selectionEntry type="upgrade" import="true" name="3rd Edition Units On" hidden="false" id="33ba-ed8c-8247-3ec0"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="c314-2a49-7f36-283a"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="bae1-1f66-4a41-f9ff"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
