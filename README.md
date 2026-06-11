@@ -33,6 +33,12 @@ Changes from Second Edition:
 - Updated Dreadnought weapon profiles to match Liber Melias
 - Updated expanded options to toggle 40k units, 3rd ed units, expanded RoW and FoC and Liber Melias options on/off (Note, the units in there havent all been included in the toggle, just the toggle itself and a few units for testing)
 - Added Destroyer Company RoW, Destroyer units added to troops choice for this etc 
+- Changed Rad-Phage to apply to the Unit, not the model
+- Gave Cavalry Battlehardened
+- Added Rad missiles to all missile launchers and gravis missile maunchers when using Destroyer RoW, including Aiolos Missile Launcher and Whirlwind missile launcher
+- Added Rad grenade option for all sgts when using Destroyer RoW 
+- Scouts given Line
+- Tactical Support Squads given Line
 
 ### Mechanicum/Titan Legions
 - Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in, Radium Jazzail also added

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="10" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="11" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="4ccbb79d-4a99-4828-af69-e600b4c38743" publisherUrl="https://github.com/Blackjack-AoD/NRData" shortName="Blackjack-AoD/NRData"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -444,6 +444,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Battle-Hardened (X)" id="3fd1-1aea-15cb-a958" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="e2b6-b770-784c-9e95" name="Vehicle:" hidden="false">
@@ -17536,7 +17537,7 @@ Note that Snap Shots and shots from weapons that scatter, or do not roll To Hit,
 If a model with this rule makes an attack against a mixed unit which has one or more models to which their Preferred Enemy rule pertains, but is not entirely composed of such models, it may still benefit from the effects of Preferred Enemy for all attacks made against that unit. For example, a model with Preferred Enemy (Independent Characters) may re-roll failed To Hit and To Wound rolls of 1 against all of the models in a unit which has been joined by an Independent Character.</description>
     </rule>
     <rule id="8189-e963-d2e5-5d3d" name="Rad-Phage" publicationId="e77a-823a-da94-16b9" page="245" hidden="false">
-      <description>A model which loses one or more Wounds to an attack with this special rule and survives has its Toughness value reduced by -1 for the rest of the battle. This effect is not cumulative with other attacks using the Rad-phage special rule, but can be stacked with other special rules that also reduce the Toughness Characteristic of the target. Note that this special rule can never reduce a model to a Toughness value of less than 1.</description>
+      <description>A unit which loses one or more Wounds to an attack with this special rule and survives has the units overall Toughness value reduced by -1 for the rest of the battle. This effect is not cumulative with other attacks using the Rad-phage or Rad grenades special rules, but can be stacked with other special rules that also reduce the Toughness Characteristic of the target. Note that this special rule can never reduce a model to a Toughness value of less than 1.</description>
     </rule>
     <rule id="564d-3550-ae44-2f99" name="Rage (X)" publicationId="e77a-823a-da94-16b9" page="245" hidden="false">
       <description>In a turn in which a model with this special rule Charges into combat, it gains a number of Attacks equal to the value of X for Charging, rather than +1. A model that has made a Disordered Charge that turn receives no benefit from Rage (see page 182).</description>
