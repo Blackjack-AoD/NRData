@@ -39,6 +39,7 @@ Changes from Second Edition:
 - Added Rad grenade option for all sgts when using Destroyer RoW 
 - Scouts given Line
 - Tactical Support Squads given Line
+- Disintegrator rifle and blaster dropped 5 points, vet sgts given to all standard squads
 
 ### Mechanicum/Titan Legions
 - Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in, Radium Jazzail also added
