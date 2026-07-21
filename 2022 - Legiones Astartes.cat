@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="237" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="238" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -4481,13 +4481,22 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="3a84-bb8c-4abc-ee0c" shared="true"/>
-                  </conditions>
                   <modifiers>
-                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84"/>
-                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672"/>
-                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0"/>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="3a84-bb8c-4abc-ee0c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="3a84-bb8c-4abc-ee0c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="aa72-63e4-bc60-4611" childId="3a84-bb8c-4abc-ee0c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <comment>Vet Sgt Upgrade</comment>
                 </modifierGroup>
@@ -7217,13 +7226,22 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="8688-4735-e8b9-85d7" shared="true"/>
-                  </conditions>
                   <modifiers>
-                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84"/>
-                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672"/>
-                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0"/>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="50ed-5869-643d-1ac5" childId="8688-4735-e8b9-85d7" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="50ed-5869-643d-1ac5" childId="8688-4735-e8b9-85d7" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="50ed-5869-643d-1ac5" childId="8688-4735-e8b9-85d7" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <comment>Vet Sgt Upgrade</comment>
                 </modifierGroup>
@@ -8666,13 +8684,22 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="3af5-845a-02f0-dcfd" shared="true"/>
-                  </conditions>
                   <modifiers>
-                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84"/>
-                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672"/>
-                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0"/>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="70eb-e4da-8b3f-f065" childId="3af5-845a-02f0-dcfd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="70eb-e4da-8b3f-f065" childId="3af5-845a-02f0-dcfd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="70eb-e4da-8b3f-f065" childId="3af5-845a-02f0-dcfd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <comment>Vet Sgt Upgrade</comment>
                 </modifierGroup>
@@ -19676,6 +19703,26 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                   </modifiers>
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="4dbe-c1bf-277a-7b8a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="4dbe-c1bf-277a-7b8a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="4357-930e-165a-a6e3" childId="4dbe-c1bf-277a-7b8a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <comment>Vet Sgt Upgrade</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -20253,6 +20300,23 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
               <comment>The Flesh Is Weak</comment>
             </modifierGroup>
           </modifierGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Upgrade to Veteran Sergeant" hidden="false" id="4dbe-c1bf-277a-7b8a">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77e5-f577-f3cb-dd48"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="0fe1-a575-1591-ab4f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -23689,13 +23753,22 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="3f3f-5dbc-6700-fbd4" shared="true"/>
-                  </conditions>
                   <modifiers>
-                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84"/>
-                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672"/>
-                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0"/>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="6db7-6e88-877e-35ca" childId="3f3f-5dbc-6700-fbd4" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="6db7-6e88-877e-35ca" childId="3f3f-5dbc-6700-fbd4" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="6db7-6e88-877e-35ca" childId="3f3f-5dbc-6700-fbd4" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <comment>Vet Sgt Upgrade</comment>
                 </modifierGroup>
@@ -25047,13 +25120,22 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="8e77-b18b-d3ea-3dff" shared="true"/>
-                  </conditions>
                   <modifiers>
-                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84"/>
-                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672"/>
-                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0"/>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="9b10-b657-a65a-9d60" childId="8e77-b18b-d3ea-3dff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="9b10-b657-a65a-9d60" childId="8e77-b18b-d3ea-3dff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="9b10-b657-a65a-9d60" childId="8e77-b18b-d3ea-3dff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <comment>Vet Sgt Upgrade</comment>
                 </modifierGroup>
@@ -31821,13 +31903,22 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="a10c-f6a4-82a7-5476" shared="true"/>
-                  </conditions>
                   <modifiers>
-                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84"/>
-                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672"/>
-                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0"/>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="58e6-f9cc-4c46-e258" childId="a10c-f6a4-82a7-5476" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="58e6-f9cc-4c46-e258" childId="a10c-f6a4-82a7-5476" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="58e6-f9cc-4c46-e258" childId="a10c-f6a4-82a7-5476" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <comment>Vet Sgt Upgrade</comment>
                 </modifierGroup>
@@ -38150,11 +38241,6 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba81-c3d5-e670-c78b" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="9f9d-24ac-2edc-61b6" shared="true" includeChildSelections="false"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character)</characteristic>
@@ -38205,104 +38291,25 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                   </modifiers>
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
-              </modifierGroups>
-            </profile>
-            <profile id="ccb7-1f0b-460e-b171" name="Legion Veteran Sergeant" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-              <modifiers>
-                <modifier type="set" field="893e-2d76-8f04-44e5" value="8*">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                        <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
-                  <conditions>
-                    <condition field="selections" scope="bac9-5389-e2e7-0b1f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="583e-62cb-53f1-f952" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="bac9-5389-e2e7-0b1f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
-                        <condition field="selections" scope="bac9-5389-e2e7-0b1f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Psyker)">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Line)">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7962-e835-2ae5-c6f1" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Psyker)">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba81-c3d5-e670-c78b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="9f9d-24ac-2edc-61b6" shared="true" includeChildSelections="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-              </characteristics>
-              <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
                     <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="8aea-b995-e957-0c42" childId="c60d-d862-a0b-9909" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="1" field="74ae-c840-0036-d244">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="8aea-b995-e957-0c42" childId="d31f-643d-2343-97b5" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="1" field="e478-41d4-a092-48a8">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="8aea-b995-e957-0c42" childId="3dc0-7375-25fb-3432" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="1" field="62d3-22d7-2d49-52dc">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="8aea-b995-e957-0c42" childId="3911-2f83-ad4c-2dac" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="bac9-5389-e2e7-0b1f" childId="1cd8-5525-1898-959a" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="bac9-5389-e2e7-0b1f" childId="1cd8-5525-1898-959a" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" value="1" field="e8a6-1da9-d384-8727">
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="bac9-5389-e2e7-0b1f" childId="1cd8-5525-1898-959a" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
-                  <comment>In Disgrace All Are Equal</comment>
+                  <comment>Vet Sgt Upgrade</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -39953,13 +39960,22 @@ It is not known if this is a mistake or not, as previously like with the Mech bo
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="04b7-4ec1-7737-2bff" shared="true"/>
-                  </conditions>
                   <modifiers>
-                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84"/>
-                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672"/>
-                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0"/>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="6263-c696-2f2e-c105" childId="04b7-4ec1-7737-2bff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="6263-c696-2f2e-c105" childId="04b7-4ec1-7737-2bff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="6263-c696-2f2e-c105" childId="04b7-4ec1-7737-2bff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <comment>Vet Sgt Upgrade</comment>
                 </modifierGroup>
@@ -54434,6 +54450,26 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                   </modifiers>
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="d30b-59bb-8ae0-36d1" childId="9f05-38b3-392b-49a1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="d30b-59bb-8ae0-36d1" childId="9f05-38b3-392b-49a1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="d30b-59bb-8ae0-36d1" childId="9f05-38b3-392b-49a1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <comment>Vet Sgt Upgrade</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -54816,6 +54852,23 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
               <comment>The Flesh Is Weak</comment>
             </modifierGroup>
           </modifierGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Upgrade to Veteran Sergeant" hidden="false" id="9f05-38b3-392b-49a1">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ecd-451e-9d04-5a12"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="0fe1-a575-1591-ab4f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -57067,17 +57120,17 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                   <modifiers>
                     <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="825d-67e0-4bbe-7b4a" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="a8e9-70e1-b8bc-8ee2" childId="825d-67e0-4bbe-7b4a" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="825d-67e0-4bbe-7b4a" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="a8e9-70e1-b8bc-8ee2" childId="825d-67e0-4bbe-7b4a" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                     <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="825d-67e0-4bbe-7b4a" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="a8e9-70e1-b8bc-8ee2" childId="825d-67e0-4bbe-7b4a" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -58456,6 +58509,26 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
                   </modifiers>
                   <comment>In Disgrace All Are Equal</comment>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="dbd4-930e-e003-9449" childId="87eb-e66a-83da-6f5c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="dbd4-930e-e003-9449" childId="87eb-e66a-83da-6f5c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="f111-2ce5-dd12-d6b0">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="dbd4-930e-e003-9449" childId="87eb-e66a-83da-6f5c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <comment>Vet Sgt Upgrade</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -58809,6 +58882,23 @@ The Reacting unit may make a Shooting Attack, targeting the unit that triggered 
               <comment>The Flesh Is Weak</comment>
             </modifierGroup>
           </modifierGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Upgrade to Veteran Sergeant" hidden="false" id="87eb-e66a-83da-6f5c">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e58-1adc-a255-f399"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="0fe1-a575-1591-ab4f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
