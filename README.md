@@ -40,7 +40,7 @@ Changes from Second Edition:
 - Scouts given Line
 - Tactical Support Squads given Line
 - Disintegrator rifle and blaster dropped 5 points, vet sgts given to all standard squads
-- Added Chainaxes for 5pts to Assault squads (due mk2 kit having just that option, WE chainaxes still free)
+- Added Chainaxes for 2pts to Assault squads (due mk2 kit having just that option, WE chainaxes still free)
 
 ### Mechanicum/Titan Legions
 - Added Galvanic rifle from 40k to Secutarii Peltasts so Regular rangers can be proxied in, Radium Jazzail also added
