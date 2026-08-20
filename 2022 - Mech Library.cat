@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="65" battleScribeVersion="2.03" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="66" battleScribeVersion="2.03" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -8678,7 +8678,7 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="384e-8ade-953f-e528" name="Knight Dominus" page="Port from 8th edition 40k" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="384e-8ade-953f-e528" name="Knight Dominus" page=" Liber Panoptica" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="f75a-d5c1-59ba-5c5a">
           <conditionGroups>
@@ -8718,7 +8718,7 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="0" field="selections" scope="roster" childId="1e8b-bbba-e168-86b1" shared="true" childName="40k Units On" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="equalTo" value="0" field="selections" scope="roster" childId="0e39-7cbd-70d5-8c09" shared="true" childName="Liber Panoptica Units On" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
