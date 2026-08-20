@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="66" battleScribeVersion="2.03" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="67" battleScribeVersion="2.03" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -1932,7 +1932,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
-                        <condition type="notEqualTo" value="1" field="selections" scope="roster" childId="e56c-0043-01ed-a5c0" shared="true" includeChildSelections="true" includeChildForces="true" childName="Liber Melias Units On"/>
+                        <condition type="equalTo" value="0" field="selections" scope="roster" childId="0e39-7cbd-70d5-8c09" shared="true" includeChildSelections="true" includeChildForces="true" childName="Liber Panoptica Units On"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2085,7 +2085,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
-                        <condition type="notEqualTo" value="1" field="selections" scope="roster" childId="e56c-0043-01ed-a5c0" shared="true" includeChildSelections="true" includeChildForces="true" childName="Liber Melias Units On"/>
+                        <condition type="equalTo" value="0" field="selections" scope="roster" childId="0e39-7cbd-70d5-8c09" shared="true" includeChildSelections="true" includeChildForces="true" childName="Liber Panoptica Units On"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -8855,22 +8855,52 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
         </infoLink>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="653b-dd44-6bed-30cb" name="May exchange a single carapace (Front) Mounted Siegebreaker Cannon:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5b2c-d200-66d2-5704">
+        <selectionEntryGroup id="653b-dd44-6bed-30cb" name="May exchange up to 3 carapace (Front) Mounted Siegebreaker Cannons For:" hidden="false" collective="false" import="true" defaultSelectionEntryId="addb-4e66-936c-bf56">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6597-6039-86b4-70c1" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ead-e6e0-2d31-8fb2" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6597-6039-86b4-70c1" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ead-e6e0-2d31-8fb2" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Siegebreaker Cannon" hidden="false" id="5b2c-d200-66d2-5704" type="selectionEntry" targetId="addb-4e66-936c-bf56"/>
-            <entryLink import="true" name="Shieldbreaker missile launcher" hidden="false" id="bcbd-7a64-7531-23a8" type="selectionEntry" targetId="3a77-3cb4-d304-f839">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Siegebreaker Cannon" hidden="false" id="addb-4e66-936c-bf56">
+              <profiles>
+                <profile name="Siegebreaker Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0f9f-bd7d-d1a5-2b87">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Twin-linked, Rending(6+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
-                <infoLink name="One Use/One Shot" id="8ae2-f8f5-e3e4-591b" hidden="false" type="rule" targetId="df0c-5423-b892-491e"/>
+                <infoLink name="Twin-linked" id="658e-2ef9-759d-ff73" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
               </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shieldbreaker missile launcher" hidden="false" id="3a77-3cb4-d304-f839">
+              <profiles>
+                <profile name="Shieldbreaker missile launcher" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c7ed-202f-cbb0-1264">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Shieldbreaker, OneShot</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="073b-d07a-1ba7-02c2-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="073b-d07a-1ba7-02c2-max"/>
+              </constraints>
+              <rules>
+                <rule name="Shieldbreaker" id="05ad-d845-053f-7d6b" hidden="false">
+                  <description>Invulnerable saves may not be taken against Wounds or Hull points of damage inflicted by a Weapon with this Special Rule. In addition, a weapon with this Special Rule ignores the effects of both the Void Shields (X) Special Rule, and Flare Shields wargear.</description>
+                </rule>
+              </rules>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="May exchange its Arm Mounted Plasma Decimator For:" id="5d06-ddd3-8faa-e34c" hidden="false" defaultSelectionEntryId="6eef-3fed-ea0a-fe63">
           <selectionEntries>
@@ -9017,52 +9047,12 @@ Maxima: A weapon with this Special Rule may only target units with the Vehicle U
         <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="424a-1643-3c20-ce45" targetId="3995-31e8-e6a2-562a"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="385"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="375"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="437f-7773-a0d0-6061" id="f184-4a2f-cb7d-b274" primary="false" name="Knight Sub-type"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Siegebreaker Cannon" hidden="false" id="addb-4e66-936c-bf56">
-          <profiles>
-            <profile name="Siegebreaker Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="0f9f-bd7d-d1a5-2b87">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Twin-linked, Rending(6+)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0651-b3e5-47bb-8c7d-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0651-b3e5-47bb-8c7d-max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Twin-linked" id="658e-2ef9-759d-ff73" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Shieldbreaker missile launcher" hidden="false" id="3a77-3cb4-d304-f839">
-          <profiles>
-            <profile name="Shieldbreaker missile launcher" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c7ed-202f-cbb0-1264">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Shieldbreaker, OneShot</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="073b-d07a-1ba7-02c2-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="073b-d07a-1ba7-02c2-max"/>
-          </constraints>
-          <rules>
-            <rule name="Shieldbreaker" id="05ad-d845-053f-7d6b" hidden="false">
-              <description>Invulnerable saves may not be taken against Wounds or Hull points of damage inflicted by a Weapon with this Special Rule. In addition, a weapon with this Special Rule ignores the effects of both the Void Shields (X) Special Rule, and Flare Shields wargear.</description>
-            </rule>
-          </rules>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Twin-linked Meltagun" hidden="false" id="5990-f170-678b-4635">
           <profiles>
             <profile name="Twin-linked Meltagun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2237-3e61-8215-bab7" publicationId="a716-c1c4-7b26-8424" page="133">
@@ -9083,8 +9073,8 @@ Maxima: A weapon with this Special Rule may only target units with the Vehicle U
             </infoLink>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3c9b-070d-ee3c-fe6c-min"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3c9b-070d-ee3c-fe6c-max"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3c9b-070d-ee3c-fe6c-min-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3c9b-070d-ee3c-fe6c-min-max"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
