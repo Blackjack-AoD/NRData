@@ -8882,15 +8882,11 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
                   <characteristics>
                     <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
                     <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
                     <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Shieldbreaker, OneShot</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="073b-d07a-1ba7-02c2-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="073b-d07a-1ba7-02c2-max"/>
-              </constraints>
               <rules>
                 <rule name="Shieldbreaker" id="05ad-d845-053f-7d6b" hidden="false">
                   <description>Invulnerable saves may not be taken against Wounds or Hull points of damage inflicted by a Weapon with this Special Rule. In addition, a weapon with this Special Rule ignores the effects of both the Void Shields (X) Special Rule, and Flare Shields wargear.</description>
