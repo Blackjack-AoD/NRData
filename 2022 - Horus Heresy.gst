@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="13" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" name="BlackJack AoD" revision="14" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="4ccbb79d-4a99-4828-af69-e600b4c38743" publisherUrl="https://github.com/Blackjack-AoD/NRData" shortName="Blackjack-AoD/NRData"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -11079,10 +11079,10 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <profiles>
         <profile id="9905-0ffd-d0d0-c0fc" name="Inversion Beamer (Short)" publicationId="a716-c1c4-7b26-8424" page="131" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Up to 18&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Up to 15&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (5&quot;), Blind</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Blind</characteristic>
           </characteristics>
         </profile>
         <profile id="8942-0ba7-8325-e0f9" name="Inversion Beamer (Long)" publicationId="a716-c1c4-7b26-8424" page="131" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -11090,13 +11090,13 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;-30&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (5&quot;), Blind</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Blind</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="d904-d242-3f3b-b18a" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
-        <infoLink id="166e-1c8f-9a89-ac6e" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink name="Blast" id="c04f-3ef9-265a-0fd5" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11109,7 +11109,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Concussive (1), †Graviton Pulse, Haywire, Brutal (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Concussive (1), †Graviton Collapse, Haywire, Brutal (2), Torsion Crusher</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11120,8 +11120,10 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
             <modifier type="set" field="name" value="Concussive (1)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="e257-c5a6-16f8-e25d" name="Graviton Pulse" hidden="false" targetId="5b9c-2738-616c-abdf" type="rule"/>
         <infoLink id="5bd5-eb5d-5b04-e9c8" name="Haywire" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+        <infoLink name="Graviton Collapse" id="2625-3fa0-b6e7-41bc" hidden="false" type="rule" targetId="60d8-5964-8671-7f3b"/>
+        <infoLink name="Torsion Crusher" id="4388-f2f9-b244-b1b8" hidden="false" type="rule" targetId="2cef-a40d-97b8-7d4e"/>
+        <infoLink name="Brutal (X)" id="58c1-4420-ad8b-0cb7" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="244" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="245" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BlackJack-AoD/NRData" library="true" gameSystemId="a49d8df0-ca8f-4710-ab3f-756f9f8967e8" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -12962,6 +12962,14 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Saturnine War Axe" hidden="false" id="3053-7b16-603a-8dcd" type="selectionEntry" targetId="640d-7a5a-ff5e-a53b">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Two-handed" id="170b-d173-8d6a-05b5" hidden="false" type="rule" targetId="4c23-e863-a569-7617"/>
+                  </infoLinks>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -68885,17 +68893,18 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
         <profile name="Saturnine Concussion Hammer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6c3d-9780-bc8b-da90">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Power, Brutal (3), Unwieldy, Critical hit (6+), Specialist Weapon, Two-handed</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Power, Brutal (2), Unwieldy, Critical hit (6+), Two-handed, Concussive (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Brutal (X)" id="e8e9-a9e3-b71d-2689" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84"/>
-        <infoLink name="Specialist Weapon" id="ea58-6567-608a-fd52" hidden="false" type="rule" targetId="1a1f-3c9b-b097-5886"/>
         <infoLink name="Unwieldy" id="aea1-52b9-ae5e-e27a" hidden="false" type="rule" targetId="1570-c21a-881f-8b8a"/>
         <infoLink name="Two-handed" id="5a23-5816-e042-e850" hidden="false" type="rule" targetId="4c23-e863-a569-7617"/>
+        <infoLink name="Critical Hit" id="e2f1-b4b8-684b-df46" hidden="false" type="rule" targetId="d6e0-1f88-c286-75ae"/>
+        <infoLink name="Concussive (X)" id="4f8c-ba2c-d0e5-9932" hidden="false" type="rule" targetId="7ce5-1bfb-64e6-f826"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Saturnine Disruption fist" hidden="false" id="ee82-cfc5-dbd3-2532">
@@ -68903,15 +68912,16 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
         <profile name="Saturnine Disruption fist" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d730-5d9e-1542-d24a">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Power, Brutal (2), ArmourBane, Unwieldy</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Power, Brutal (2), ArmourBane, Unwieldy, Specialist Weapon</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Armourbane (X)" id="0bfb-79c1-9798-8d17" hidden="false" type="rule" targetId="cb59-f920-f071-7cd4"/>
         <infoLink name="Unwieldy" id="56f5-1c8e-7d9b-3172" hidden="false" type="rule" targetId="1570-c21a-881f-8b8a"/>
+        <infoLink name="Specialist Weapon" id="d749-66f8-9247-3335" hidden="false" type="rule" targetId="1a1f-3c9b-b097-5886"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Saturnine War Axe" hidden="false" id="640d-7a5a-ff5e-a53b">
@@ -68919,15 +68929,16 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
         <profile name="Saturnine War Axe" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3a21-50f2-1844-7316">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Power, Reaping Blow (2), Brutal (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Power, Reaping Blow (2), Murderous Strike (6+), Specialist Weapon</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Reaping Blow (X)" id="d01f-6c64-d873-74dc" hidden="false" type="rule" targetId="bd8c-4f52-d682-1b40"/>
-        <infoLink name="Brutal (X)" id="c993-e499-823a-d800" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84"/>
+        <infoLink name="Murderous Strike (X)" id="b099-6230-51d0-da85" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae"/>
+        <infoLink name="Specialist Weapon" id="36cb-eaa2-64e0-7564" hidden="false" type="rule" targetId="1a1f-3c9b-b097-5886"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Particle Shredder" hidden="false" id="c293-117a-4235-8f3d">
@@ -69419,7 +69430,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
                 <entryLink import="true" name="Debased Augments" hidden="true" type="selectionEntryGroup" id="25e2-268c-6744-5173" targetId="a819-94e-c873-8a35"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="cc93-1dae-7ef5-1b9c" name="1) Armour Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="65ca-51eb-5464-7a87">
+            <selectionEntryGroup id="cc93-1dae-7ef5-1b9c" name="1) Armour Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="ac04-b8e4-4bab-28c3">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="438f-6e72-5fd8-aa86" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="935a-78a4-dbdb-0bee" type="max"/>
@@ -69439,7 +69450,8 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             <entryLink import="true" name="The Legacy of Nikaea" hidden="false" id="d19c-d208-87c4-5760" type="selectionEntryGroup" targetId="4930-e52e-883d-11a7"/>
             <entryLink import="true" name="Saturnine Melee Weapon, Praetor" hidden="false" id="e70b-a2b2-8cbe-c858" type="selectionEntryGroup" targetId="0af8-a439-5e87-adfc">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="59f5-ebb1-7ad7-3cf1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59f5-ebb1-7ad7-3cf1"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cb1-65c2-1013-bbbd"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="5f35-d833-7996-5625" type="selectionEntry" targetId="f625-a2b0-e61b-ec7f">
@@ -69450,8 +69462,40 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             </entryLink>
             <entryLink import="true" name="Saturnine Ranged Weapon" hidden="false" id="4081-2206-1dcf-811d" type="selectionEntryGroup" targetId="338d-1216-201c-38ac">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="67f5-e772-1c9e-59e2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67f5-e772-1c9e-59e2"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01f3-c246-a6ff-e2e6"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Saturnine Disruption fist" hidden="false" id="758f-8449-14fd-2db5" type="selectionEntry" targetId="ee82-cfc5-dbd3-2532">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Add Particle Shredder / Plasma Blaster" id="0f2d-d95a-201b-9cf1" hidden="false" defaultSelectionEntryId="none">
+                      <entryLinks>
+                        <entryLink import="true" name="Particle Shredder" hidden="false" id="6562-b790-3100-bfd3" type="selectionEntry" targetId="c293-117a-4235-8f3d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d50-804c-8534-d31f"/>
+                            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="77de-80a2-e86b-5a00"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Plasma Blaster" hidden="false" id="a750-270c-4f9d-ab9f" type="selectionEntry" targetId="cd52-e9e8-3ab1-995c">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a04-e801-2bfd-67b1"/>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ffed-3053-4df9-9022"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
             </entryLink>
             <entryLink import="true" name="Saturnine teleportation transponder" hidden="false" id="a1c8-3740-8b3a-bf5c" type="selectionEntry" targetId="692e-d837-0556-a49f">
               <constraints>
@@ -69609,7 +69653,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
       <profiles>
         <profile name="Twin Heavy Disintegrator" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="4c6d-5dfd-e6c9-5123">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Gets Hot, Instant Death, Twin-Linked</characteristic>
@@ -69674,9 +69718,9 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
         <profile name="Disintegrator Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="70f1-bbaa-e54d-f131">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast, Gets Hot, Instant Death</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Twin-linked Blast, Gets Hot, Instant Death</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -69684,6 +69728,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
         <infoLink name="Blast" id="6881-dc2b-b0f5-f65e" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
         <infoLink name="Gets Hot" id="20ba-b27a-c098-d36c" hidden="false" type="rule" targetId="679f-9d97-5ace-a652"/>
         <infoLink name="Instant Death" id="9e57-f2b3-842d-133b" hidden="false" type="rule" targetId="9e96-fff1-b916-d9a3"/>
+        <infoLink name="Twin-linked" id="72e8-063a-e0fd-a0b9" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Bombard" hidden="false" id="d37a-5085-be3f-501b">
@@ -69693,7 +69738,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Breaching (6+), Plasma, Brutal (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Breaching (4+)</characteristic>
           </characteristics>
         </profile>
         <profile name="Plasma bombard (Maximal)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2bf9-2214-2116-606d">
@@ -69701,7 +69746,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast, Gets Hot, Breaching (5+) Plasma, Barrage, Brutal (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast, Gets Hot, Breaching (4+), Barrage</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -69710,11 +69755,6 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
         <infoLink name="Breaching (X)" id="e36b-031b-04ae-a398" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c"/>
         <infoLink name="Gets Hot" id="3c5e-3952-3cc1-1299" hidden="false" type="rule" targetId="679f-9d97-5ace-a652"/>
         <infoLink name="Barrage" id="ea21-71cd-b993-bc22" hidden="false" type="rule" targetId="7255-b5ee-c3f4-3037"/>
-        <infoLink name="Brutal (X)" id="0707-8b70-42cc-7e5f" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
-          <modifiers>
-            <modifier type="set" value="Brutal (2)" field="name"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Occulix Targeting Auspex" hidden="false" id="4e34-50c2-d60e-2d1b">
@@ -69950,7 +69990,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6da9-899a-7959-7a9f" name="2) Legion Saturnine Terminator" hidden="false" collective="false" import="true" defaultSelectionEntryId="844b-bbdf-4b57-72f7">
+        <selectionEntryGroup id="6da9-899a-7959-7a9f" name="2) Legion Saturnine Terminator" hidden="false" collective="false" import="true" defaultSelectionEntryId="6108-7d25-d2df-c835">
           <constraints>
             <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cb8-9891-ca86-6834" type="max"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa16-7dfd-dd56-16aa" type="min"/>
@@ -70250,7 +70290,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="91f5-bdf4-676b-8b76" name="1) Legion Saturnine Sergeant" hidden="false" collective="false" import="true" defaultSelectionEntryId="cfcc-3739-e2b8-d707">
+        <selectionEntryGroup id="91f5-bdf4-676b-8b76" name="1) Legion Saturnine Sergeant" hidden="false" collective="false" import="true" defaultSelectionEntryId="c6a4-f785-5753-7e8a">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8033-68ca-b7f6-37d9" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f30d-4932-08d2-9492" type="min"/>
@@ -70460,7 +70500,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
                     <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
                     <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
                     <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                     <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
                     <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
                   </characteristics>
@@ -70845,12 +70885,6 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             <modifier type="set" value="Breaching (6+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Gets Hot" id="3e77-9ca0-f70f-b8c1" hidden="false" type="rule" targetId="679f-9d97-5ace-a652"/>
-        <infoLink name="Brutal (X)" id="3819-f5cd-63b0-7484" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
-          <modifiers>
-            <modifier type="set" value="Brutal (2)" field="name"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Heavy Particle Shredder" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3527-6a55-a6f2-2241">
@@ -70858,7 +70892,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Particle, Template, Breaching (6+), Gets Hot Brutal (2)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Template, Breaching (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -70870,7 +70904,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Large Blast (5&quot;) Breaching (5+) Gets Hot, Brutal (2), Plasma</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;) Breaching (4+) Gets Hot, Reactor Overload, Barrage</characteristic>
           </characteristics>
         </profile>
         <profile name="Heavy plasma bombard (Sustained)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6313-e65b-a8d2-0db6">
@@ -70878,31 +70912,26 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Blast (3&quot;) Breaching (6+), Brutal (2), Plasma</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Blast (3&quot;) Breaching (4+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Breaching (X)" id="9ce1-5eb9-d396-f98d" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
-          <comment>6+ (Sustained)</comment>
+          <comment>4+ (Sustained)</comment>
           <modifiers>
-            <modifier type="set" value="Breaching (6+) (Sustained)" field="name"/>
+            <modifier type="set" value="Breaching (4+) (Sustained)" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="Breaching (X)" id="eafd-5509-603f-7d0c" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
-          <comment>5+ (Maximal)</comment>
+          <comment>4+ (Maximal)</comment>
           <modifiers>
-            <modifier type="set" value="Breaching (5+) (Maximal)" field="name"/>
+            <modifier type="set" value="Breaching (4+) (Maximal)" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="Barrage" id="5556-c791-dcf5-a422" hidden="false" type="rule" targetId="7255-b5ee-c3f4-3037"/>
         <infoLink name="Blast" id="ba3b-e157-5caa-51e1" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8"/>
         <infoLink name="Gets Hot" id="bcd5-0219-78ef-8704" hidden="false" type="rule" targetId="679f-9d97-5ace-a652"/>
-        <infoLink name="Brutal (X)" id="bbd1-86a3-8cbb-f8f0" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
-          <modifiers>
-            <modifier type="set" value="Brutal (2)" field="name"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Photonic incinerator" hidden="false" id="ef4a-ab81-bc39-d66f">
@@ -71024,7 +71053,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             <infoLink id="a483-0d68-639e-4e28" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
             <infoLink id="1183-9b3f-0bd9-a17a" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (5)"/>
+                <modifier type="set" field="name" value="Hammer of Wrath (4)"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -71344,7 +71373,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="340"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="4280-4963-02b5-e31d" id="b252-60fd-b6e5-4dd3" name="Dreadnought Unit Type" primary="false"/>
@@ -73618,7 +73647,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
             <categoryLink targetId="9231-183c-b97b-63f9" id="2848-d508-b48c-3392" name="Heavy Sub-type" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="eab1-224e-cd67-d6ff" name="3) Ranged Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="d935-4ccc-5515-a677">
+            <selectionEntryGroup id="eab1-224e-cd67-d6ff" name="3) Ranged Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="a187-d1a4-2874-3c92">
               <modifiers>
                 <modifier type="set" field="9523-f24a-ace4-2f9b" value="0">
                   <conditions>
@@ -73787,7 +73816,7 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="2764-c277-1862-0147" name="2) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd4b-5b1d-92ef-7a0f">
+            <selectionEntryGroup id="2764-c277-1862-0147" name="2) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="7450-78f8-bbe7-f441">
               <modifiers>
                 <modifier type="set" field="82b7-0479-c668-453d" value="0">
                   <conditions>
@@ -73892,13 +73921,16 @@ In addition, Any wounds taken as a result of the Gets Hot Special rule on a mode
                 </entryLink>
                 <entryLink import="true" name="Saturnine Concussion Hammer" hidden="false" id="8326-1ecc-245b-e31b" type="selectionEntry" targetId="7b41-fef3-c81f-9dfc">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Saturnine Disruption fist" hidden="false" id="7450-78f8-bbe7-f441" type="selectionEntry" targetId="ee82-cfc5-dbd3-2532">
                   <entryLinks>
                     <entryLink import="true" name="Add Particle Shredder / Plasma Blaster" hidden="false" id="c86f-00f0-60a8-070f" type="selectionEntryGroup" targetId="dc3f-5e45-4163-655e"/>
                   </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -84058,12 +84090,12 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
       <entryLinks>
         <entryLink import="true" name="Plasma Bombard" hidden="false" id="3424-abd6-41c8-90fa" type="selectionEntry" targetId="d37a-5085-be3f-501b">
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
           </costs>
         </entryLink>
         <entryLink import="true" name="Twin Heavy Disintegrator" hidden="false" id="1c86-1145-c823-86c6" type="selectionEntry" targetId="5a2d-1aea-6f91-cdbe">
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
           </costs>
           <infoLinks>
             <infoLink name="Twin-linked" id="1784-20c2-423a-4a30" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
@@ -84079,7 +84111,7 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b233-6616-0d83-04f1"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
           </costs>
         </entryLink>
         <entryLink import="true" name="Saturnine Disruption fist" hidden="false" id="b31b-cbf3-a6ef-bf94" type="selectionEntry" targetId="ee82-cfc5-dbd3-2532">
@@ -84111,6 +84143,9 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="753f-a683-ee7c-b3ab"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7ffa-4342-5e07-fa69"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Saturnine War Axe" hidden="false" id="9f57-b7ea-1d4d-51d6" type="selectionEntry" targetId="640d-7a5a-ff5e-a53b">
           <constraints>
